@@ -78,31 +78,31 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">GmodInterop</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
     </div>
     <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
     </div>
     <div>
-      <span class="xref">System.Object.GetHashCode()</span>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">System.Object.GetType()</span>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
     </div>
     <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
     </div>
     <div>
-      <span class="xref">System.Object.ToString()</span>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GmodNET.API.html">GmodNET.API</a></h6>
@@ -140,7 +140,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
         <td><span class="parametername">lua_state</span></td>
         <td><p>A pointer to the Garry's Mod's native lua_state structure.</p>
 </td>
@@ -164,7 +164,7 @@
     </tbody>
   </table>
   <h5 id="GmodNET_API_GmodInterop_GetLuaFromState_System_IntPtr__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method is designed to be used with static functions annotated with <span class="xref">System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute</span> attribute.
+  <div class="markdown level1 remarks"><p>This method is designed to be used with static functions annotated with <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.unmanagedcallersonlyattribute">UnmanagedCallersOnlyAttribute</a> attribute.
 See <a href="https://gist.github.com/GlebChili/444d8cb1d641d62f94495e546f681b89">example</a> for more info.</p>
 </div>
   <span class="small pull-right mobile-hide">
@@ -194,13 +194,13 @@ See <a href="https://gist.github.com/GlebChili/444d8cb1d641d62f94495e546f681b89"
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Byte</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
         <td><span class="parametername">upvalue</span></td>
         <td><p>A relative index of the upvalue.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><span class="parametername">managed_offset</span></td>
         <td><p>Use upvalue offset for managed closures</p>
 </td>
@@ -217,7 +217,7 @@ See <a href="https://gist.github.com/GlebChili/444d8cb1d641d62f94495e546f681b89"
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><p>A pseudo-index to access an upvalue.</p>
 </td>
       </tr>
@@ -228,7 +228,7 @@ See <a href="https://gist.github.com/GlebChili/444d8cb1d641d62f94495e546f681b89"
 the pseudo-index of the <code>n-th</code> upvalue is <code>-10002-n</code>.
 For example, the pseudo-index of the first upvalue is <code>-10003</code>, the pseudo-index of the second upvalue is <code>-10004</code>, etc.</p>
 <p>If closure is created using <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_PushManagedClosure_System_Func_GmodNET_API_ILua_System_Int32__System_Byte_">PushManagedClosure(Func&lt;ILua, Int32&gt;, Byte)</a>
-then first upvalue is an integer representation of the <span class="xref">System.Runtime.InteropServices.GCHandle</span> for the underlying managed delegate.
+then first upvalue is an integer representation of the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.gchandle">GCHandle</a> for the underlying managed delegate.
 Thus, to access actual upvalues we have to apply additional offset for managed closures,
 i.e.the pseudo-index of the n-th upvalue is equal to <code>-10003–n</code> (index of <code>n+1-th</code> upvalue in the native case).
 <code data-dev-comment-type="paramref" class="paramref">managed_offset</code> parameter is responsible for applying such managed offset.</p>

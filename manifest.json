@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GmodNET.API.GmodInterop.html",
-          "hash": "XjjL1ja/xHeVWX9ISWhEVA=="
+          "hash": "Kt+TJ9Z/+qd7zaQv1hrwJA=="
         }
       },
       "is_incremental": true,
@@ -33,10 +33,10 @@
       "output": {
         ".html": {
           "relative_path": "api/GmodNET.API.GmodLuaException.html",
-          "hash": "/T2dIbVQ20lisu7QLr+64Q=="
+          "hash": "+G1CY7v+Xe3maG9FIAHKxg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/GmodNET.API.ILua.html",
-          "hash": "1Fand2mIhjKnKbFQhlUwUw=="
+          "hash": "OIWXTgy9/tZmW8M4+YSkMw=="
         }
       },
       "is_incremental": true,
@@ -57,10 +57,10 @@
       "output": {
         ".html": {
           "relative_path": "api/GmodNET.API.IModule.html",
-          "hash": "o8ek778d6Z5ey8PjsJvQlw=="
+          "hash": "ShrYzwg6zkPgXZcY/jF1dw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -69,10 +69,10 @@
       "output": {
         ".html": {
           "relative_path": "api/GmodNET.API.ModuleAssemblyLoadContext.html",
-          "hash": "rFh4trCA6naNUDH34xgBEQ=="
+          "hash": "pCNdDnQtu2nEuv1GHLXyUA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -105,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/GmodNET.API.html",
-          "hash": "JDuIEtB985SlNSiWmGv65A=="
+          "hash": "6OE35csa/ytz3oHXFgCFWA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -225,7 +225,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 8,
-          "skipped_file_count": 8
+          "skipped_file_count": 6
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
