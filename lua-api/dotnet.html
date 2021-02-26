@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>dotnet </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="dotnet ">
+    <meta name="generator" content="docfx 1.0.0.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="../api-fusion/toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/gmodnetlogo-50px.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="dotnet">dotnet</h1>
+
+<p>The Lua library to interact with the GmodDotNet runtime.
+This library is added to the Lua global scope after GmodDotNet runtime is loaded to the game with
+<code>require(&quot;dotnet&quot;)</code> (see <a href="https://wiki.facepunch.com/gmod/Global.require">require</a> for more info).</p>
+<h2 id="functions">Functions</h2>
+<h3 id="loadstring">load(string)</h3>
+<p>Loads a GmodDotNet module by its name.</p>
+<h5 id="declaration">Declaration</h5>
+<pre><code class="lang-lua">boolean dotnet.load(string module_name)
+</code></pre>
+<h5 id="parameters">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://wiki.facepunch.com/gmod/string">string</a></td>
+<td>module_name</td>
+<td>A name of the module to load</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns">Returns</h5>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://wiki.facepunch.com/gmod/boolean">boolean</a></td>
+<td><code>True</code>, if the module was loaded successfully, <code>False</code> otherwise.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="remarks">Remarks</h5>
+<p>Loads a GmodDotNet module at path <code>[garrys mod (or dedicated server) root folder]/garrysmod/lua/bin/Modules/[module name]/[module name].dll</code>.</p>
+<p>Module must be accompanied by all its dependencies and <code>[module name].deps.json</code> file.
+In practice it means that folder <code>[garrys mod root folder]/garrysmod/lua/bin/Modules/[module name]</code> must contain the full output of <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-publish"><code>dotnet publish</code></a> operation of dotnet sdk.</p>
+<p>If GmodDotNet runtime is not able to load the module, the function will return <code>False</code>, and the error message will be printed to a game console.</p>
+<h3 id="unloadstring">unload(string)</h3>
+<p>Unloads a GmodDotNet module by its name.</p>
+<h5 id="declaration-1">Declaration</h5>
+<pre><code class="lang-lua">boolean dotnet.unload(string module_name)
+</code></pre>
+<h5 id="parameters-1">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://wiki.facepunch.com/gmod/string">string</a></td>
+<td>module_name</td>
+<td>A name of the module to unload</td>
+</tr>
+</tbody>
+</table>
+<h5 id="returns-1">Returns</h5>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://wiki.facepunch.com/gmod/boolean">boolean</a></td>
+<td><code>True</code>, if the module was unloaded successfully, <code>False</code> otherwise.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="remarks-1">Remarks</h5>
+<p>If GmodDotNet runtime is not able to unload the module (exception was thrown while unloading, module is not able to free its resources, module with given name is not loaded, etc.), the function will return <code>False</code>, and the error message will be printed to a game console.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/GmodNET/GmodDotNet/blob/better-xml-docs/docfx_project/lua-api/dotnet.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
