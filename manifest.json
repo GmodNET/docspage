@@ -1,0 +1,287 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/glebc/source/repos/GmodDotNet/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "WCKrQb68IHzSzDKslx0nxv/4EFXNxOUbECcGYL6HxLc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api-fusion/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api-fusion/index.html",
+          "hash": "q3zUjHuVRBRJmElf4Jyy6u0r5eaKWLTde1pmbhzWKfo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api-fusion/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-fusion/toc.html",
+          "hash": "bQ4WTtbaqPeKHtYiYxhLL8+PY9fP9DMXAEJzt3jJzSU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GmodNET.API.GmodInterop.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GmodNET.API.GmodInterop.html",
+          "hash": "MWvfRguicm23N68POp4+4uGaJjH3gkLSe4ESDtmDhqs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GmodNET.API.GmodLuaException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GmodNET.API.GmodLuaException.html",
+          "hash": "GkXSBHXex6h4YVtgPTIz4dEiw83CQ3yuWlMyUrmIxtQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GmodNET.API.ILua.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GmodNET.API.ILua.html",
+          "hash": "RE51QBnWt+b7riIlTM+iRFgfEqEXArrs4PZdGnchbQw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GmodNET.API.IModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GmodNET.API.IModule.html",
+          "hash": "noRFN7xY5ujez50pVkNsJhYRFtns6fezWgSmiCaxmVA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GmodNET.API.ModuleAssemblyLoadContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GmodNET.API.ModuleAssemblyLoadContext.html",
+          "hash": "ab+nHlCMCi/FjxZORhYL2QpKEyris4H8xT3Mbw7lSOM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GmodNET.API.SPECIAL_TABLES.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GmodNET.API.SPECIAL_TABLES.html",
+          "hash": "Ju0i6tOICo8QAsd2rQdAcIoVqL+gQqNLveKdTZeaskc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GmodNET.API.TYPES.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GmodNET.API.TYPES.html",
+          "hash": "tZLcXx+4iZUljIKvUiXx8oW6JYBNSB0PGnjugLQsmxU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GmodNET.API.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GmodNET.API.html",
+          "hash": "gFb1Te567RRo1UiyDRanJKR2E7EGYu+LifXYsCloRQk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "FHHrmwacO2RpBpcBFITCIKvbUgdLCUo37bNUMDV3Wxg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "HyoLAd3xT5eZxHkuJjx+wWu2oVYBvuk0xYZGv6G+OUI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/favicon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/gmodnetlogo-50px.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/gmodnetlogo-50px.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "BwYnHkBdkVOGe3TmKNNrXZsO2kml87Vc6GzKIex7V/8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "lua-api/dotnet.md",
+      "output": {
+        ".html": {
+          "relative_path": "lua-api/dotnet.html",
+          "hash": "zmB7nFdUBikpEVHOcCWmTyHLgJARC2hHHYCyeflfDWI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "m1UPbQsg8ptJ2slj2BT0KzILCVI8VaTzludJ0+Z3EHI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 6,
+          "skipped_file_count": 6
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 8,
+          "skipped_file_count": 8
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
