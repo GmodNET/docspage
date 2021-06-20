@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Connect to nightly builds | Gmod.NET Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Connect to nightly builds | Gmod.NET Docs ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../images/favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../images/gmodnetlogo-50px.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="tutorial_connect_nightly">
+
+
+<div class="WARNING">
+<h5>Warning</h5>
+<p>The nightly builds can be unstable. Please help us find bugs by <a href="https://github.com/GmodNET/GmodDotNet/issues">reporting issues on GitHub</a>.</p>
+</div>
+<h1 id="connect-to-the-nightly-builds-and-use-it-in-your-project">Connect to the nightly builds and use it in your project</h1>
+<p>Connect to the latest version of Gmod.NET to use the newest features (<code>main</code> for <code>.NET 5.0</code>) or to test the <code>.NET 6.0 Preview</code> version on the <code>net6</code> branch.</p>
+<p>We'll create a project to test if we've got the latest version.</p>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li><a href="https://visualstudio.microsoft.com/">Visual Studio 2019</a>
+<ul>
+<li>Ensure at least these individual components are installed:
+<ul>
+<li>.NET SDK</li>
+<li>NuGet Package manager</li>
+<li><code>.NET 5.0</code> if you want to use the nightly <code>main</code> branch</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The <code>.NET 6.0 Preview</code> <a href="https://dotnet.microsoft.com/download/dotnet/6.0">(link)</a> if you want to use the nightly <code>net6</code> branch.</li>
+<li>Windows 10 (For more see the <a href="https://docs.microsoft.com/en-us/visualstudio/releases/2019/system-requirements#visual-studio-2019-system-requirements">Visual Studio requirements</a>)</li>
+<li>An internet connection</li>
+</ul>
+<h2 id="start-a-net-project">Start a .NET project</h2>
+<p>To test if we've got a working nightly version we'll create a test project.</p>
+<ol>
+<li>Start Visual Studio 2019</li>
+<li>Create a new project and solution</li>
+<li>When asked to pick a framework choose:
+<ul>
+<li>For the <code>net6</code> branches choose <code>.NET 6.0</code></li>
+<li>In our case we'll go for the <code>main</code> branch which is built for <code>.NET 5.0</code>
+<img src="../hello-world/images/project-net-5.png" alt=".NET 5.0 project"></li>
+</ul>
+</li>
+</ol>
+<h2 id="adding-the-nightly-builds-to-nuget">Adding the nightly builds to NuGet</h2>
+<ol>
+<li>In the <a href="https://github.com/GmodNET/GmodDotNet#nightly-builds">Gmod.NET README</a> there is <a href="https://dev.azure.com/GmodNET/gmodnet-artifacts/_packaging?_a=feed&amp;feed=gmodnet-packages">a link to the nightly builds</a></li>
+<li>Click <em>GmodNET.API</em>:
+<img src="images/nightly-feed-api.png" alt="Nightly feed API"></li>
+<li>Click <em>Connect to feed</em>:
+<img src="images/nightly-feed-connect.png" alt="Nightly feed connect"></li>
+<li>Note the <em>Source</em> link and name from the instructions:
+<img src="images/nightly-feed-instructions.png" alt="Nightly feed instructions"></li>
+<li>In Visual Studio open the NuGet Package Manager:
+<img src="../hello-world/images/nuget-package-manager.png" alt="NuGet package manager"></li>
+<li>Click the cog-wheel at the top right behind the default package source:
+<img src="images/nuget-add-source.png" alt="Add source"></li>
+<li>Click the green plus and enter the <em>Name</em> and <em>Source</em> you found at the nightly feed instructions (step 4).</li>
+<li>Close these settings with OK.</li>
+<li>Now select the newly added package source:
+<img src="images/nuget-package-source.png" alt="Choose source"></li>
+<li>Ensure <em>Include prerelease</em> is selected</li>
+<li>Click GmodNET.API and install the version you'd like to use.</li>
+</ol>
+<h2 id="test-installation">Test installation</h2>
+<ol>
+<li>Implement the IModule interface. (Add <code>: IModule</code> behind the class name)
+<ul>
+<li><strong>Note</strong> you can have Visual Studio implement the interface through the <em>See potential fixes</em> option that appears when you hover over the IModule error.</li>
+</ul>
+</li>
+<li>Check the code generates to this result:
+<img src="images/test-nightly-imodule.png" alt="IModule interface"></li>
+<li>Build the project. If you get no errors you followed the instructions correctly and can now use the nightly builds.</li>
+</ol>
+<h2 id="install-the-module-in-garrys-mod">Install the module in Garry's Mod</h2>
+<p>To use our module we need to install the same built version of Gmod.NET to Garry's Mod.</p>
+<ol>
+<li>Go to <a href="https://nightly.gmodnet.xyz/">https://nightly.gmodnet.xyz/</a></li>
+<li>Download the pre-built version of Gmod.NET that you selected in NuGet earlier</li>
+<li>Install it in Garry's Mod <code>lua/bin</code></li>
+</ol>
+<p><strong>You can now install your own .NET modules to <code>lua/bin/Modules</code> and load them in Garry's Mod</strong></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/GmodNET/GmodDotNet/blob/doc-tutorials/docfx_project/articles/tutorials/connect-nightly/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2976 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ILua
+   | Gmod.NET Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ILua
+   | Gmod.NET Docs ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="../api-fusion/toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/gmodnetlogo-50px.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GmodNET.API.ILua">
+  
+  
+  <h1 id="GmodNET_API_ILua" data-uid="GmodNET.API.ILua" class="text-break">Interface ILua
+  </h1>
+  <div class="markdown level0 summary"><p>A .NET interface to interact with Garry's Mod Lua engine.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GmodNET.API.html">GmodNET.API</a></h6>
+  <h6><strong>Assembly</strong>: GmodNET.API.dll</h6>
+  <h5 id="GmodNET_API_ILua_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ILua</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_Call_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.Call(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L172">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_Call_" data-uid="GmodNET.API.ILua.Call*"></a>
+  <h4 id="GmodNET_API_ILua_Call_System_Int32_System_Int32_" data-uid="GmodNET.API.ILua.Call(System.Int32,System.Int32)">Call(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Calls a function (or any other callable object) followed by its arguments from the stack.
+Pops the function and arguments and push function’s return values onto the stack.
+WARNING: this method is unsafe and should not be used in the most cases.
+Use <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_MCall_System_Int32_System_Int32_">MCall(Int32, Int32)</a> and <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_PCall_System_Int32_System_Int32_System_Int32_">PCall(Int32, Int32, Int32)</a> instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This method is unsafe. Use ILua.MCall or ILua.PCall instead.&quot;, false)]
+void Call(int iArgs, int iResults)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iArgs</span></td>
+        <td><p>Number of arguments to pass to the function.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iResults</span></td>
+        <td><p>Number of the function’s return values to push back onto the stack.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_Call_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_Call_System_Int32_System_Int32_">Call(Int32, Int32)</a> is the most basic and unsafe way to call a Lua function.
+Unlike <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_MCall_System_Int32_System_Int32_">MCall(Int32, Int32)</a> and <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_PCall_System_Int32_System_Int32_System_Int32_">PCall(Int32, Int32, Int32)</a>,
+<a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_Call_System_Int32_System_Int32_">Call(Int32, Int32)</a> does not catch any errors or exceptions thrown by a callee.
+Thus, any thrown error can cause a complete termination of the game or server process, especially on Linux and macOS platforms.</p>
+<p>See <code>lua_call</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <h5 id="GmodNET_API_ILua_Call_System_Int32_System_Int32__examples">Examples</h5>
+  <p>The following example function prints a message to the game console by calling Garry’s Mod native function <code>print</code> with <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_Call_System_Int32_System_Int32_">Call(Int32, Int32)</a>.</p>
+<pre><code>static int HelloWorld(ILua lua)
+{
+    lua.PushSpecial(SPECIAL_TABLES.SPECIAL_GLOB);
+    lua.GetField(-1, &quot;print&quot;); // Push Lua function to the stack
+    lua.PushString(&quot;Hello World!&quot;); // Push an argument for print function
+    lua.Call(1, 0); // Call print function with one argument and zero return values
+    lua.Pop(1); // ILua.Call has poped function and string from the stack, so there is only global table left
+
+    return 0;
+}</code></pre>
+
+  <h5 id="GmodNET_API_ILua_Call_System_Int32_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_MCall_System_Int32_System_Int32_">MCall(Int32, Int32)</a></div>
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_PCall_System_Int32_System_Int32_System_Int32_">PCall(Int32, Int32, Int32)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_CreateMetaTable_System_String__.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.CreateMetaTable(System.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L604">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_CreateMetaTable_" data-uid="GmodNET.API.ILua.CreateMetaTable*"></a>
+  <h4 id="GmodNET_API_ILua_CreateMetaTable_System_String__" data-uid="GmodNET.API.ILua.CreateMetaTable(System.String@)">CreateMetaTable(in String)</h4>
+  <div class="markdown level1 summary"><p>Creates a new Lua type, pushes its metatable onto the stack, and returns new type’s id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int CreateMetaTable(in string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>A name for the new type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>A type id for newly created type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_CreateMetaTable_System_String___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_CreateMetaTable_System_String__">CreateMetaTable(in String)</a> allows you to extend Lua and Garry’s Mod type system with custom types.
+Returned type id can be used with <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_PushUserType_System_IntPtr_System_Int32_">PushUserType(IntPtr, Int32)</a>.</p>
+<p>See section &quot;Metatables&quot; in the Lua manual for more information about types and metatables: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <h5 id="GmodNET_API_ILua_CreateMetaTable_System_String___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_PushUserType_System_IntPtr_System_Int32_">PushUserType(IntPtr, Int32)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_CreateTable.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.CreateTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L114">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_CreateTable_" data-uid="GmodNET.API.ILua.CreateTable*"></a>
+  <h4 id="GmodNET_API_ILua_CreateTable" data-uid="GmodNET.API.ILua.CreateTable">CreateTable()</h4>
+  <div class="markdown level1 summary"><p>Creates a new table and pushes it to the top of the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CreateTable()</code></pre>
+  </div>
+  <h5 id="GmodNET_API_ILua_CreateTable_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <code>lua_createtable</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_Equal_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.Equal(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L214">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_Equal_" data-uid="GmodNET.API.ILua.Equal*"></a>
+  <h4 id="GmodNET_API_ILua_Equal_System_Int32_System_Int32_" data-uid="GmodNET.API.ILua.Equal(System.Int32,System.Int32)">Equal(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Checks if two objects on the stack are equal. Invokes types’ metamethods if applicable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Equal(int iA, int iB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iA</span></td>
+        <td><p>Stack index of the first object to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iB</span></td>
+        <td><p>Stack index of the second object to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>True</code> if objects being compared are equal, <code>False</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_Equal_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_Equal_System_Int32_System_Int32_">Equal(Int32, Int32)</a> follows semantics of Lua <code>==</code> operator.
+In particular, if two objects being compered have the same type with <code>__eq</code> metamethod defined,
+then such metamethod will be implicitly invoked to determine equality.</p>
+<p>See <code>lua_equal</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+<p>See &quot;Relational Metamethods&quot; for more information about equality and <code>__eq</code> metamethod: <a href="https://www.lua.org/pil/13.2.html">https://www.lua.org/pil/13.2.html</a></p>
+</div>
+  <h5 id="GmodNET_API_ILua_Equal_System_Int32_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_RawEqual_System_Int32_System_Int32_">RawEqual(Int32, Int32)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_GetAngle_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.GetAngle(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L562">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_GetAngle_" data-uid="GmodNET.API.ILua.GetAngle*"></a>
+  <h4 id="GmodNET_API_ILua_GetAngle_System_Int32_" data-uid="GmodNET.API.ILua.GetAngle(System.Int32)">GetAngle(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns a Garry’s Mod angle at <code data-dev-comment-type="paramref" class="paramref">iStackPos</code> as <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector3 GetAngle(int iStackPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iStackPos</span></td>
+        <td><p>A stack position of a Garry’s Mod angle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a></td>
+        <td><p>A Garry’s Mod angle at <code data-dev-comment-type="paramref" class="paramref">iStackPos</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_GetBool_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.GetBool(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L345">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_GetBool_" data-uid="GmodNET.API.ILua.GetBool*"></a>
+  <h4 id="GmodNET_API_ILua_GetBool_System_Int32_" data-uid="GmodNET.API.ILua.GetBool(System.Int32)">GetBool(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns a boolean value from the <code data-dev-comment-type="paramref" class="paramref">iStackPos</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetBool(int iStackPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iStackPos</span></td>
+        <td><p>The stack position of the object to get as bool.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>A boolean value from the stack. <code>False</code> upon failure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_GetBool_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Returns <code>True</code> for any value different from <code>False</code> and <code>nil</code>.
+If you want to accept only actual boolean values,
+use <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_IsType_System_Int32_GmodNET_API_TYPES_">IsType(Int32, TYPES)</a> to test the value's type before calling <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_GetBool_System_Int32_">GetBool(Int32)</a>.
+Returns <code>False</code> upon failure.</p>
+<p>See <code>lua_toboolean</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_GetCFunction_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.GetCFunction(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L359">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_GetCFunction_" data-uid="GmodNET.API.ILua.GetCFunction*"></a>
+  <h4 id="GmodNET_API_ILua_GetCFunction_System_Int32_" data-uid="GmodNET.API.ILua.GetCFunction(System.Int32)">GetCFunction(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns a C Function pointer (as <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a>) from the <code data-dev-comment-type="paramref" class="paramref">iStackPos</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IntPtr GetCFunction(int iStackPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iStackPos</span></td>
+        <td><p>The stack position of the C Function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><p>C Function pointer from the stack.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_GetCFunction_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the operation fails or the object at <code data-dev-comment-type="paramref" class="paramref">iStackPos</code> is not a C Function, then <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr.zero">Zero</a> will be returned.</p>
+<p>See <code>lua_tocfunction</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+<p>See “C Functions” for more info on C functions in Lua: <a href="https://www.lua.org/pil/26.1.html">https://www.lua.org/pil/26.1.html</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_GetField_System_Int32_System_String__.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.GetField(System.Int32%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L65">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_GetField_" data-uid="GmodNET.API.ILua.GetField*"></a>
+  <h4 id="GmodNET_API_ILua_GetField_System_Int32_System_String__" data-uid="GmodNET.API.ILua.GetField(System.Int32,System.String@)">GetField(Int32, in String)</h4>
+  <div class="markdown level1 summary"><p>Pushes a value from the table at <code data-dev-comment-type="paramref" class="paramref">iStackPos</code> by a given string <code data-dev-comment-type="paramref" class="paramref">key</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetField(int iStackPos, in string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iStackPos</span></td>
+        <td><p>Position of the table on the stack.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key for the value in the table.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_GetField_System_Int32_System_String___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You can use this function to get values from Lua tables.
+In the example below we get a global Garry's Mod Lua function <code>print</code> (<a href="https://wiki.facepunch.com/gmod/Global.print">https://wiki.facepunch.com/gmod/Global.print</a>)
+from the global table <a class="xref" href="GmodNET.API.SPECIAL_TABLES.html#GmodNET_API_SPECIAL_TABLES_SPECIAL_GLOB">SPECIAL_GLOB</a> to print a message to the game console.</p>
+<p>See <code>lua_getfield</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <h5 id="GmodNET_API_ILua_GetField_System_Int32_System_String___examples">Examples</h5>
+  <pre><code>public int LuaFunc(ILua lua)
+{
+    lua.PushSpecial(SPECIAL_TABLES.SPECIAL_GLOB);
+    lua.GetField(-1, &quot;print&quot;);
+    lua.PushString(&quot;Hello&quot;);
+    lua.MCall(1, 0);
+    lua.Pop(1);
+
+    return 0;
+}</code></pre>
+
+  <h5 id="GmodNET_API_ILua_GetField_System_Int32_System_String___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_SetField_System_Int32_System_String__">SetField(Int32, in String)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_GetInternalPointer.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.GetInternalPointer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L786">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_GetInternalPointer_" data-uid="GmodNET.API.ILua.GetInternalPointer*"></a>
+  <h4 id="GmodNET_API_ILua_GetInternalPointer" data-uid="GmodNET.API.ILua.GetInternalPointer">GetInternalPointer()</h4>
+  <div class="markdown level1 summary"><p>Returns an internal pointer to Garry’s Mod native <code>ILuaBase</code> structure used by interface implementation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IntPtr GetInternalPointer()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><p>An internal pointer to Garry’s Mod native <code>ILuaBase</code> structure used by interface implementation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_GetInternalPointer_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>For advanced use cases only.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_GetMetaTable_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.GetMetaTable(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L137">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_GetMetaTable_" data-uid="GmodNET.API.ILua.GetMetaTable*"></a>
+  <h4 id="GmodNET_API_ILua_GetMetaTable_System_Int32_" data-uid="GmodNET.API.ILua.GetMetaTable(System.Int32)">GetMetaTable(Int32)</h4>
+  <div class="markdown level1 summary"><p>Pushes the metatable of the element at <code data-dev-comment-type="paramref" class="paramref">iStackPos</code> to the top of the stack. Upon failure, returns false and does not push anything.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetMetaTable(int iStackPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iStackPos</span></td>
+        <td><p>Stack position of the element to get metatable for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>True</code> if metatable was pushed to the stack, <code>False</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_GetMetaTable_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <code>lua_getmetatable</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a>
+To learn more about Lua metatables see <a href="https://www.lua.org/pil/13.html">https://www.lua.org/pil/13.html</a></p>
+</div>
+  <h5 id="GmodNET_API_ILua_GetMetaTable_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_SetMetaTable_System_Int32_">SetMetaTable(Int32)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_GetNumber_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.GetNumber(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L330">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_GetNumber_" data-uid="GmodNET.API.ILua.GetNumber*"></a>
+  <h4 id="GmodNET_API_ILua_GetNumber_System_Int32_" data-uid="GmodNET.API.ILua.GetNumber(System.Int32)">GetNumber(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the number at <code data-dev-comment-type="paramref" class="paramref">iStackPos</code>.
+If the value at <code data-dev-comment-type="paramref" class="paramref">iStackPos</code> is not a number, then the Lua engine will try to convert the object to number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double GetNumber(int iStackPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iStackPos</span></td>
+        <td><p>The stack position of the object to get as number.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><p>The number from the stack. <code>0.0</code> upon failure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_GetNumber_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Returns <code>0.0</code> upon failure.</p>
+<p>See <code>lua_tonumber</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_GetString_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.GetString(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L317">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_GetString_" data-uid="GmodNET.API.ILua.GetString*"></a>
+  <h4 id="GmodNET_API_ILua_GetString_System_Int32_" data-uid="GmodNET.API.ILua.GetString(System.Int32)">GetString(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns a string at <code data-dev-comment-type="paramref" class="paramref">iStackPos</code>.
+If the value at <code data-dev-comment-type="paramref" class="paramref">iStackPos</code> is not a string, then the Lua engine will try to convert the object to string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetString(int iStackPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iStackPos</span></td>
+        <td><p>The stack index of the object to get as string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The string from the stack. <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string.empty">Empty</a> upon failure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_GetString_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Returns <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string.empty">Empty</a> upon failure.</p>
+<p>See <code>lua_tolstring</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_GetTable_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.GetTable(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L695">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_GetTable_" data-uid="GmodNET.API.ILua.GetTable*"></a>
+  <h4 id="GmodNET_API_ILua_GetTable_System_Int32_" data-uid="GmodNET.API.ILua.GetTable(System.Int32)">GetTable(Int32)</h4>
+  <div class="markdown level1 summary"><p>Pushes the value <code>t[k]</code> onto of the stack,
+where <code>t</code> is a table-like object at <code data-dev-comment-type="paramref" class="paramref">iStackPos</code>,
+and <code>k</code> is an object on top of the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetTable(int iStackPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iStackPos</span></td>
+        <td><p>A stack position of the table to get a value from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_GetTable_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Unlike <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_GetField_System_Int32_System_String__">GetField(Int32, in String)</a>, allows to get a value from the table when the key in the key-value pair is not a string.</p>
+<p>Pops a key object from the stack.</p>
+<p>See <code>lua_gettable</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <h5 id="GmodNET_API_ILua_GetTable_System_Int32__examples">Examples</h5>
+  <p>The following example shows how <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_GetTable_System_Int32_">GetTable(Int32)</a> can be used to get a value from the table instead of <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_GetField_System_Int32_System_String__">GetField(Int32, in String)</a>.</p>
+<pre><code>public static int GetTableExample(ILua lua)
+{
+    lua.PushSpecial(SPECIAL_TABLES.SPECIAL_GLOB);
+    lua.PushString(&quot;print&quot;);
+    lua.GetTable(-2); // Getting print function from the Lua Global table
+    lua.PushString(&quot;GetTable works!&quot;);
+    lua.MCall(1, 0);
+    lua.Pop(1);
+
+    return 0;
+}</code></pre>
+
+  <h5 id="GmodNET_API_ILua_GetTable_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_GetField_System_Int32_System_String__">GetField(Int32, in String)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_GetType_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.GetType(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L522">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_GetType_" data-uid="GmodNET.API.ILua.GetType*"></a>
+  <h4 id="GmodNET_API_ILua_GetType_System_Int32_" data-uid="GmodNET.API.ILua.GetType(System.Int32)">GetType(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns a type id of the object at <code data-dev-comment-type="paramref" class="paramref">iStackPos</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetType(int iStackPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iStackPos</span></td>
+        <td><p>A stack position of the object whose type id must be returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>A type id of the object at <code data-dev-comment-type="paramref" class="paramref">iStackPos</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_GetType_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <code>lua_type</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <h5 id="GmodNET_API_ILua_GetType_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_IsType_System_Int32_System_Int32_">IsType(Int32, Int32)</a></div>
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_IsType_System_Int32_GmodNET_API_TYPES_">IsType(Int32, TYPES)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_GetTypeName_GmodNET_API_TYPES_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.GetTypeName(GmodNET.API.TYPES)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L539">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_GetTypeName_" data-uid="GmodNET.API.ILua.GetTypeName*"></a>
+  <h4 id="GmodNET_API_ILua_GetTypeName_GmodNET_API_TYPES_" data-uid="GmodNET.API.ILua.GetTypeName(GmodNET.API.TYPES)">GetTypeName(TYPES)</h4>
+  <div class="markdown level1 summary"><p>Returns a name of Lua or Garry’s Mod built-in type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetTypeName(TYPES type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GmodNET.API.TYPES.html">TYPES</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>One of Lua and Garry’s Mod built-in types.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>A type’s name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_GetTypeName_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.GetTypeName(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L532">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_GetTypeName_" data-uid="GmodNET.API.ILua.GetTypeName*"></a>
+  <h4 id="GmodNET_API_ILua_GetTypeName_System_Int32_" data-uid="GmodNET.API.ILua.GetTypeName(System.Int32)">GetTypeName(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns a type name by its type id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetTypeName(int iType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iType</span></td>
+        <td><p>An id of the type whose name to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>A name of the type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_GetTypeName_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Works only for built-in types. See <a class="xref" href="GmodNET.API.TYPES.html">TYPES</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_GetUserType_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.GetUserType(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L663">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_GetUserType_" data-uid="GmodNET.API.ILua.GetUserType*"></a>
+  <h4 id="GmodNET_API_ILua_GetUserType_System_Int32_System_Int32_" data-uid="GmodNET.API.ILua.GetUserType(System.Int32,System.Int32)">GetUserType(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns a pointer from userdata at <code data-dev-comment-type="paramref" class="paramref">iStackPos</code> if it has given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IntPtr GetUserType(int iStackPos, int iType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iStackPos</span></td>
+        <td><p>A stack position of the userdata to get a pointer from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iType</span></td>
+        <td><p>An id of the type which userdata must have.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><p>A userdata pointer, if userdata’s type id is equal to <code data-dev-comment-type="paramref" class="paramref">iType</code>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr.zero">Zero</a> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_GetUserType_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If type id of userdata is not equal to <code data-dev-comment-type="paramref" class="paramref">iType</code>, then <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr.zero">Zero</a> will be returned.</p>
+<p>See “Userdata” for more information on userdata: <a href="https://www.lua.org/pil/28.1.html">https://www.lua.org/pil/28.1.html</a></p>
+<p>See section &quot;Metatables&quot; in the Lua manual for more information about types and metatables: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_GetVector_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.GetVector(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L569">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_GetVector_" data-uid="GmodNET.API.ILua.GetVector*"></a>
+  <h4 id="GmodNET_API_ILua_GetVector_System_Int32_" data-uid="GmodNET.API.ILua.GetVector(System.Int32)">GetVector(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns a Garry’s Mod vector at <code data-dev-comment-type="paramref" class="paramref">iStackPos</code> as <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector3 GetVector(int iStackPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iStackPos</span></td>
+        <td><p>A stack position of Garry’s Mod vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a></td>
+        <td><p>A Garry’s Mod vector at <code data-dev-comment-type="paramref" class="paramref">iStackPos</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_Insert_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.Insert(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L242">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_Insert_" data-uid="GmodNET.API.ILua.Insert*"></a>
+  <h4 id="GmodNET_API_ILua_Insert_System_Int32_" data-uid="GmodNET.API.ILua.Insert(System.Int32)">Insert(Int32)</h4>
+  <div class="markdown level1 summary"><p>Moves an element at the top of the stack to the index passed as <code data-dev-comment-type="paramref" class="paramref">iStackPos</code> parameter.
+Any elements above (with greater positive index) <code data-dev-comment-type="paramref" class="paramref">iStackPos</code> are shifted upwards.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Insert(int iStackPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iStackPos</span></td>
+        <td><p>An index to insert an element from the top of the stack into.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_Insert_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Cannot be called with a pseudo-index, because a pseudo-index is not an actual stack position.</p>
+<p>See <code>lua_insert</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_IsType_System_Int32_GmodNET_API_TYPES_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.IsType(System.Int32%2CGmodNET.API.TYPES)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L510">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_IsType_" data-uid="GmodNET.API.ILua.IsType*"></a>
+  <h4 id="GmodNET_API_ILua_IsType_System_Int32_GmodNET_API_TYPES_" data-uid="GmodNET.API.ILua.IsType(System.Int32,GmodNET.API.TYPES)">IsType(Int32, TYPES)</h4>
+  <div class="markdown level1 summary"><p>Checks if the type of the object at <code data-dev-comment-type="paramref" class="paramref">iStackPos</code> is equal to Lua or Garry’s Mod built-in one
+(built-in types are enumerated by <a class="xref" href="GmodNET.API.TYPES.html">TYPES</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsType(int iStackPos, TYPES type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iStackPos</span></td>
+        <td><p>A stack position of the object whose type must be checked.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GmodNET.API.TYPES.html">TYPES</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>One of Lua and Garry’s Mod built-in types to compare with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>True</code> if the object’s type is equal to <code data-dev-comment-type="paramref" class="paramref">type</code>, <code>False</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_IsType_System_Int32_GmodNET_API_TYPES__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <code>lua_type</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <h5 id="GmodNET_API_ILua_IsType_System_Int32_GmodNET_API_TYPES__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_GetType_System_Int32_">GetType(Int32)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_IsType_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.IsType(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L497">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_IsType_" data-uid="GmodNET.API.ILua.IsType*"></a>
+  <h4 id="GmodNET_API_ILua_IsType_System_Int32_System_Int32_" data-uid="GmodNET.API.ILua.IsType(System.Int32,System.Int32)">IsType(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Checks if the type id of the object at <code data-dev-comment-type="paramref" class="paramref">iStackPos</code> is equal to <code data-dev-comment-type="paramref" class="paramref">iType</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsType(int iStackPos, int iType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iStackPos</span></td>
+        <td><p>A stack position of the object whose type must be checked.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iType</span></td>
+        <td><p>A type id to compare with object’s one.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>True</code> if object’s type id is equal to <code data-dev-comment-type="paramref" class="paramref">iType</code>, <code>False</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_IsType_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <code>lua_type</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <h5 id="GmodNET_API_ILua_IsType_System_Int32_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_GetType_System_Int32_">GetType(Int32)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_MCall_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.MCall(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L830">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_MCall_" data-uid="GmodNET.API.ILua.MCall*"></a>
+  <h4 id="GmodNET_API_ILua_MCall_System_Int32_System_Int32_" data-uid="GmodNET.API.ILua.MCall(System.Int32,System.Int32)">MCall(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Calls a function (or any other callable object) followed by its arguments from the stack in the protected mode (will catch any exception).
+All caught exceptions are rethrown as <a class="xref" href="GmodNET.API.GmodLuaException.html">GmodLuaException</a>.
+Pops the function and arguments from the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void MCall(int iArgs, int iResults)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iArgs</span></td>
+        <td><p>Number of arguments to pass to the function.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iResults</span></td>
+        <td><p>Number of the function’s return values to push back onto the stack.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_MCall_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If execution is successful, pushes function’s return values back to the stack.
+Otherwise, nothing will be pushed, and <a class="xref" href="GmodNET.API.GmodLuaException.html">GmodLuaException</a> will be thrown.</p>
+<p>This makes <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_MCall_System_Int32_System_Int32_">MCall(Int32, Int32)</a> a better alternative to <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_PCall_System_Int32_System_Int32_System_Int32_">PCall(Int32, Int32, Int32)</a>,
+since any thrown exception then can be caught with usual C# <code>try/catch</code> block.</p>
+</div>
+  <h5 id="GmodNET_API_ILua_MCall_System_Int32_System_Int32__examples">Examples</h5>
+  <p>The following example shows, how to call a Lua function with <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_MCall_System_Int32_System_Int32_">MCall(Int32, Int32)</a> and catch any possible exceptions.</p>
+<pre><code>public static int CallAndCatch(ILua lua)
+{
+    lua.PushSpecial(SPECIAL_TABLES.SPECIAL_GLOB);
+    lua.GetField(-1, &quot;print&quot;);
+    lua.PushString(&quot;Lua function was called&quot;);
+    try
+    {
+        lua.MCall(1, 0); // Calling Lua print function
+    }
+    catch(GmodLuaException e) // Catchs a Lua exception, if thrown
+    {
+        Console.WriteLine(&quot;Print function threw an exception: &quot; + e.Message);
+    }
+    finally
+    {
+        lua.Pop(1);
+    }
+
+    return 0;
+}</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GmodNET.API.GmodLuaException.html">GmodLuaException</a></td>
+        <td><p>Lua engine exception was thrown while function execution.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_MCall_System_Int32_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_PCall_System_Int32_System_Int32_System_Int32_">PCall(Int32, Int32, Int32)</a></div>
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_Call_System_Int32_System_Int32_">Call(Int32, Int32)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_Next_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.Next(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L304">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_Next_" data-uid="GmodNET.API.ILua.Next*"></a>
+  <h4 id="GmodNET_API_ILua_Next_System_Int32_" data-uid="GmodNET.API.ILua.Next(System.Int32)">Next(Int32)</h4>
+  <div class="markdown level1 summary"><p>Pops a key from the top of the stack, and pushes a key-value pair from the table at the given index (the &quot;next&quot; pair after the given key).
+If there are no more elements in the table, then lua_next returns <code>0</code> (and pushes nothing).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int Next(int iStackPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iStackPos</span></td>
+        <td><p>The stack index of the table to get a key-value from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p><code>0</code> if there are no more key-value pairs to push, and non-zero integer otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_Next_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Allows you to iterate tables similar to Lua <code>pairs(...)</code>.
+If the value on the top of the stack is <code>nil</code>, then the first key-value pair will be pushed onto the stack.
+After successful execution, the key will have stack index <code>-2</code> and the value will have index <code>-1</code>.</p>
+<p>See <code>lua_next</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <h5 id="GmodNET_API_ILua_Next_System_Int32__examples">Examples</h5>
+  <p>The following example demonstrates usage of <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_Next_System_Int32_">Next(Int32)</a> to print server players’ nicknames to the game console.</p>
+<pre><code>public static int TableIter(ILua lua)
+{
+    List&lt;string> players = new List&lt;string>();
+
+    lua.PushSpecial(SPECIAL_TABLES.SPECIAL_GLOB);
+    lua.GetField(-1, &quot;player&quot;);
+    lua.GetField(-1, &quot;GetAll&quot;);
+    lua.MCall(0, 1); // Will push a table of all players on server
+    lua.PushNil(); // Calls ILua.Next on nil value to start iterating over table
+    while(lua.Next(-2) != 0) // Iterating over players table
+    {
+        lua.GetField(-1, &quot;Nick&quot;); // Extracts a method which returns a player&apos;s nick
+        lua.Push(-2); // Pushes a copy of player object to pass as a param to Nick()
+        lua.MCall(1, 1);
+        players.Add(lua.GetString(-1));
+        lua.Pop(2); // Pops player object and nickname string from the stack, leaves corresponding key to continue iteration
+    }
+    lua.Pop(3);
+
+    if(players.Count != 0)
+    {
+        Console.WriteLine(&quot;Players on server:&quot;);
+        foreach(string n in players)
+        {
+            Console.WriteLine(n);
+        }
+    }
+
+    return 0;
+}</code></pre>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_ObjLen_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.ObjLen(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L555">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_ObjLen_" data-uid="GmodNET.API.ILua.ObjLen*"></a>
+  <h4 id="GmodNET_API_ILua_ObjLen_System_Int32_" data-uid="GmodNET.API.ILua.ObjLen(System.Int32)">ObjLen(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns a “length” of the object at the given index <code data-dev-comment-type="paramref" class="paramref">iStackPos</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ObjLen(int iStackPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iStackPos</span></td>
+        <td><p>A stack position of the object whose “length” to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>A “length” of the object at <code data-dev-comment-type="paramref" class="paramref">iStackPos</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_ObjLen_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A “length” has different meanings for different types:
+for strings, this is a string length;
+for tables, this is the result of the Lua length operator <code>#</code>;
+for userdata, this is the size of the memory block allocated for the userdata;
+for all other objects, it is 0.</p>
+<p>See <code>lua_objlen</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_PCall_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.PCall(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L196">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_PCall_" data-uid="GmodNET.API.ILua.PCall*"></a>
+  <h4 id="GmodNET_API_ILua_PCall_System_Int32_System_Int32_System_Int32_" data-uid="GmodNET.API.ILua.PCall(System.Int32,System.Int32,System.Int32)">PCall(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Calls a function (or any other callable object) followed by its arguments from the stack in the protected mode (will catch any exception).
+Pops the function and arguments from the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int PCall(int IArgs, int IResults, int ErrorFunc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">IArgs</span></td>
+        <td><p>Number of arguments to pass to the function.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">IResults</span></td>
+        <td><p>Number of the function’s return values to push back onto the stack.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">ErrorFunc</span></td>
+        <td><p>The stack index of an error handler function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p><code>0</code> in case of success or one of the error codes (defined by Lua specification).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_PCall_System_Int32_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If execution is successful, pushes function’s return values back to the stack.
+Otherwise, if exception was thrown while function call, pushes error message to the stack and returns exception’s code.
+If <code data-dev-comment-type="paramref" class="paramref">ErrorFunc</code> is 0, then the error message returned on the stack is exactly the original error message.
+Otherwise, <code data-dev-comment-type="paramref" class="paramref">ErrorFunc</code> is the stack index of an error handler function (must be a real index, pseudo-indexes are not supported).
+In case of runtime errors,
+this handler function will be called with the error message and its return
+value will be the message returned on the stack by <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_PCall_System_Int32_System_Int32_System_Int32_">PCall(Int32, Int32, Int32)</a>.</p>
+<p>See <code>lua_pcall</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <h5 id="GmodNET_API_ILua_PCall_System_Int32_System_Int32_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_MCall_System_Int32_System_Int32_">MCall(Int32, Int32)</a></div>
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_Call_System_Int32_System_Int32_">Call(Int32, Int32)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_Pop_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.Pop(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L36">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_Pop_" data-uid="GmodNET.API.ILua.Pop*"></a>
+  <h4 id="GmodNET_API_ILua_Pop_System_Int32_" data-uid="GmodNET.API.ILua.Pop(System.Int32)">Pop(Int32)</h4>
+  <div class="markdown level1 summary"><p>Pops iAmt elements from the top of the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Pop(int IAmt = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">IAmt</span></td>
+        <td><p>Number of elements to pop from the stack.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_Pop_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <code>lua_pop</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_Push_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.Push(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L27">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_Push_" data-uid="GmodNET.API.ILua.Push*"></a>
+  <h4 id="GmodNET_API_ILua_Push_System_Int32_" data-uid="GmodNET.API.ILua.Push(System.Int32)">Push(Int32)</h4>
+  <div class="markdown level1 summary"><p>Pushes a copy of the element at iStackPos to the top of the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Push(int iStackPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iStackPos</span></td>
+        <td><p>Position of the element on the stack.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_PushAngle_System_Numerics_Vector3_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.PushAngle(System.Numerics.Vector3)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L575">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_PushAngle_" data-uid="GmodNET.API.ILua.PushAngle*"></a>
+  <h4 id="GmodNET_API_ILua_PushAngle_System_Numerics_Vector3_" data-uid="GmodNET.API.ILua.PushAngle(System.Numerics.Vector3)">PushAngle(Vector3)</h4>
+  <div class="markdown level1 summary"><p>Pushes a given angle, represented as <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a>, as Garry’s Mod angle onto the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PushAngle(Vector3 ang)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a></td>
+        <td><span class="parametername">ang</span></td>
+        <td><p>An angle to push onto the stack.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_PushBool_System_Boolean_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.PushBool(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L396">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_PushBool_" data-uid="GmodNET.API.ILua.PushBool*"></a>
+  <h4 id="GmodNET_API_ILua_PushBool_System_Boolean_" data-uid="GmodNET.API.ILua.PushBool(System.Boolean)">PushBool(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Pushes a given boolean value onto the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PushBool(bool val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>A bool value to push.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_PushBool_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <code>lua_pushboolean</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_PushCClosure_System_IntPtr_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.PushCClosure(System.IntPtr%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L438">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_PushCClosure_" data-uid="GmodNET.API.ILua.PushCClosure*"></a>
+  <h4 id="GmodNET_API_ILua_PushCClosure_System_IntPtr_System_Int32_" data-uid="GmodNET.API.ILua.PushCClosure(System.IntPtr,System.Int32)">PushCClosure(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Pushes a given C Function pointer (as <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a>) onto the stack,
+associates it with <code data-dev-comment-type="paramref" class="paramref">iVars</code> objects on top of the stack (such objects are called upvalues),
+and creates a Lua function closure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PushCClosure(IntPtr native_func_ptr, int iVars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">native_func_ptr</span></td>
+        <td><p>A C function pointer to push onto the stack and create closure from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iVars</span></td>
+        <td><p>A number of objects on top of the stack to associate with the closure as upvalues.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_PushCClosure_System_IntPtr_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Pops upvalues from the stack.</p>
+<p>See “Upvalues” for more information about Lua closures: <a href="https://www.lua.org/pil/27.3.3.html">https://www.lua.org/pil/27.3.3.html</a></p>
+<p>See <code>lua_pushcclosure</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_PushCFunction__.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.PushCFunction()%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L422">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_PushCFunction_" data-uid="GmodNET.API.ILua.PushCFunction*"></a>
+  <h4 id="GmodNET_API_ILua_PushCFunction__" data-uid="GmodNET.API.ILua.PushCFunction()">PushCFunction(delegate* unmanaged[Cdecl]&lt;IntPtr, Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Pushes a given C Function pointer (as C# 9.0 function pointer) onto the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PushCFunction(delegate* unmanaged[Cdecl]&lt;IntPtr, int&gt; function_pointer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate*unmanaged [CDecl]&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">function_pointer</span></td>
+        <td><p>A C# 9.0 function pointer to push.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_PushCFunction___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A natively callable function, whose pointer is being pushed, must be ABI-compatible with a C function of signature <code>int Func(void* lua_state)</code>.</p>
+<p>See “C Functions” for more info on C functions in Lua: <a href="https://www.lua.org/pil/26.1.html">https://www.lua.org/pil/26.1.html</a></p>
+<p>See <code>lua_pushcfunction</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_PushCFunction_System_IntPtr_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.PushCFunction(System.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L409">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_PushCFunction_" data-uid="GmodNET.API.ILua.PushCFunction*"></a>
+  <h4 id="GmodNET_API_ILua_PushCFunction_System_IntPtr_" data-uid="GmodNET.API.ILua.PushCFunction(System.IntPtr)">PushCFunction(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Pushes a given C Function pointer (as <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a>) onto the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PushCFunction(IntPtr native_func_ptr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">native_func_ptr</span></td>
+        <td><p>A native C function pointer to push.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_PushCFunction_System_IntPtr__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A native C function, whose pointer is being pushed, must be of signature <code>int Func(void* lua_state)</code>.</p>
+<p>See “C Functions” for more info on C functions in Lua: <a href="https://www.lua.org/pil/26.1.html">https://www.lua.org/pil/26.1.html</a></p>
+<p>See <code>lua_pushcfunction</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_PushGlobalTable.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.PushGlobalTable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L870">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_PushGlobalTable_" data-uid="GmodNET.API.ILua.PushGlobalTable*"></a>
+  <h4 id="GmodNET_API_ILua_PushGlobalTable" data-uid="GmodNET.API.ILua.PushGlobalTable">PushGlobalTable()</h4>
+  <div class="markdown level1 summary"><p>Pushes Lua Global Table (<a class="xref" href="GmodNET.API.SPECIAL_TABLES.html#GmodNET_API_SPECIAL_TABLES_SPECIAL_GLOB">SPECIAL_GLOB</a>) onto the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PushGlobalTable()</code></pre>
+  </div>
+  <h5 id="GmodNET_API_ILua_PushGlobalTable_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is a shortcut for <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_PushSpecial_GmodNET_API_SPECIAL_TABLES_">PushSpecial(SPECIAL_TABLES)</a> and <a class="xref" href="GmodNET.API.SPECIAL_TABLES.html#GmodNET_API_SPECIAL_TABLES_SPECIAL_GLOB">SPECIAL_GLOB</a> parameter.</p>
+<p>See “Using the Global Table” for more information on Lua Global Table: <a href="https://www.lua.org/pil/15.4.html">https://www.lua.org/pil/15.4.html</a></p>
+</div>
+  <h5 id="GmodNET_API_ILua_PushGlobalTable_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_PushSpecial_GmodNET_API_SPECIAL_TABLES_">PushSpecial(SPECIAL_TABLES)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_PushManagedClosure_System_Func_GmodNET_API_ILua_System_Int32__System_Byte_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.PushManagedClosure(System.Func%7BGmodNET.API.ILua%2CSystem.Int32%7D%2CSystem.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L859">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_PushManagedClosure_" data-uid="GmodNET.API.ILua.PushManagedClosure*"></a>
+  <h4 id="GmodNET_API_ILua_PushManagedClosure_System_Func_GmodNET_API_ILua_System_Int32__System_Byte_" data-uid="GmodNET.API.ILua.PushManagedClosure(System.Func{GmodNET.API.ILua,System.Int32},System.Byte)">PushManagedClosure(Func&lt;ILua, Int32&gt;, Byte)</h4>
+  <div class="markdown level1 summary"><p>Pushes a given .NET delegate onto the stack,
+associates it with <code data-dev-comment-type="paramref" class="paramref">number_of_upvalues</code> objects on top of the stack (such objects are called upvalues),
+and creates a Lua function closure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">GCHandle PushManagedClosure(Func&lt;ILua, int&gt; function, byte number_of_upvalues)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="GmodNET.API.ILua.html">ILua</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">function</span></td>
+        <td><p>A .NET delegate to create a Lua closure from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td><span class="parametername">number_of_upvalues</span></td>
+        <td><p>A number of objects on top of the stack to associate with the closure as upvalues.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.gchandle">GCHandle</a></td>
+        <td><p>An internal <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.gchandle">GCHandle</a> instance allocated for the pushed delegate. For advanced use cases only. Can be ignored most of the time.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_PushManagedClosure_System_Func_GmodNET_API_ILua_System_Int32__System_Byte__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Pops upvalues from the stack.</p>
+<p>Pushed closures can throw .NET exceptions.
+If pushed closure throws a .NET exception, it will be converted to a native Lua exception and rethrown.</p>
+<p>See “Upvalues” for more information about Lua closures: <a href="https://www.lua.org/pil/27.3.3.html">https://www.lua.org/pil/27.3.3.html</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_PushManagedFunction_System_Func_GmodNET_API_ILua_System_Int32__.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.PushManagedFunction(System.Func%7BGmodNET.API.ILua%2CSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L841">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_PushManagedFunction_" data-uid="GmodNET.API.ILua.PushManagedFunction*"></a>
+  <h4 id="GmodNET_API_ILua_PushManagedFunction_System_Func_GmodNET_API_ILua_System_Int32__" data-uid="GmodNET.API.ILua.PushManagedFunction(System.Func{GmodNET.API.ILua,System.Int32})">PushManagedFunction(Func&lt;ILua, Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Pushes a given .NET delegate as a Lua function onto the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">GCHandle PushManagedFunction(Func&lt;ILua, int&gt; function)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="GmodNET.API.ILua.html">ILua</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">function</span></td>
+        <td><p>A delegate to push.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.gchandle">GCHandle</a></td>
+        <td><p>An internal <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.gchandle">GCHandle</a> instance allocated for the pushed delegate. For advanced use cases only. Can be ignored most of the time.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_PushManagedFunction_System_Func_GmodNET_API_ILua_System_Int32___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Pushed functions can throw .NET exceptions.
+If pushed function throws a .NET exception, it will be converted to a native Lua exception and rethrown.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_PushMetaTable_GmodNET_API_TYPES_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.PushMetaTable(GmodNET.API.TYPES)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L624">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_PushMetaTable_" data-uid="GmodNET.API.ILua.PushMetaTable*"></a>
+  <h4 id="GmodNET_API_ILua_PushMetaTable_GmodNET_API_TYPES_" data-uid="GmodNET.API.ILua.PushMetaTable(GmodNET.API.TYPES)">PushMetaTable(TYPES)</h4>
+  <div class="markdown level1 summary"><p>Pushes a metatable of one of the Lua or Garry’s Mod built-in types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool PushMetaTable(TYPES type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GmodNET.API.TYPES.html">TYPES</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>A type whose metatable must be pushed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>True</code> if metatable was successfully pushed, <code>False</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_PushMetaTable_GmodNET_API_TYPES__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See section &quot;Metatables&quot; in the Lua manual for more information about types and metatables: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_PushMetaTable_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.PushMetaTable(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L614">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_PushMetaTable_" data-uid="GmodNET.API.ILua.PushMetaTable*"></a>
+  <h4 id="GmodNET_API_ILua_PushMetaTable_System_Int32_" data-uid="GmodNET.API.ILua.PushMetaTable(System.Int32)">PushMetaTable(Int32)</h4>
+  <div class="markdown level1 summary"><p>Pushes a metatable of the given type onto the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool PushMetaTable(int iType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iType</span></td>
+        <td><p>An id of the type whose metatable must be pushed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>True</code> if metatable was successfully pushed, <code>False</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_PushMetaTable_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See section &quot;Metatables&quot; in the Lua manual for more information about types and metatables: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_PushNil.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.PushNil%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L367">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_PushNil_" data-uid="GmodNET.API.ILua.PushNil*"></a>
+  <h4 id="GmodNET_API_ILua_PushNil" data-uid="GmodNET.API.ILua.PushNil">PushNil()</h4>
+  <div class="markdown level1 summary"><p>Pushes a <code>nil</code> value onto the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PushNil()</code></pre>
+  </div>
+  <h5 id="GmodNET_API_ILua_PushNil_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <code>lua_pushnil</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_PushNumber_System_Double_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.PushNumber(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L387">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_PushNumber_" data-uid="GmodNET.API.ILua.PushNumber*"></a>
+  <h4 id="GmodNET_API_ILua_PushNumber_System_Double_" data-uid="GmodNET.API.ILua.PushNumber(System.Double)">PushNumber(Double)</h4>
+  <div class="markdown level1 summary"><p>Pushes a given double-precision number to the Lua stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PushNumber(double val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>A number to push.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_PushNumber_System_Double__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <code>lua_pushnumber</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_PushSpecial_GmodNET_API_SPECIAL_TABLES_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.PushSpecial(GmodNET.API.SPECIAL_TABLES)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L485">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_PushSpecial_" data-uid="GmodNET.API.ILua.PushSpecial*"></a>
+  <h4 id="GmodNET_API_ILua_PushSpecial_GmodNET_API_SPECIAL_TABLES_" data-uid="GmodNET.API.ILua.PushSpecial(GmodNET.API.SPECIAL_TABLES)">PushSpecial(SPECIAL_TABLES)</h4>
+  <div class="markdown level1 summary"><p>Pushes a special Lua table (like <a class="xref" href="GmodNET.API.SPECIAL_TABLES.html#GmodNET_API_SPECIAL_TABLES_SPECIAL_GLOB">SPECIAL_GLOB</a>) onto the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PushSpecial(SPECIAL_TABLES table)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GmodNET.API.SPECIAL_TABLES.html">SPECIAL_TABLES</a></td>
+        <td><span class="parametername">table</span></td>
+        <td><p>A special table to push (enumerated by <a class="xref" href="GmodNET.API.SPECIAL_TABLES.html">SPECIAL_TABLES</a>).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_PushSpecial_GmodNET_API_SPECIAL_TABLES__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <a class="xref" href="GmodNET.API.SPECIAL_TABLES.html">SPECIAL_TABLES</a> docs for more information about special tables.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_PushString_System_String__.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.PushString(System.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L378">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_PushString_" data-uid="GmodNET.API.ILua.PushString*"></a>
+  <h4 id="GmodNET_API_ILua_PushString_System_String__" data-uid="GmodNET.API.ILua.PushString(System.String@)">PushString(in String)</h4>
+  <div class="markdown level1 summary"><p>Pushes a given string to the Lua stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PushString(in string str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>A string to push.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_PushString_System_String___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The string will be converted to UTF-8 encoded byte array.</p>
+<p>See <code>lua_pushstring</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_PushUserData_System_IntPtr_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.PushUserData(System.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L776">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_PushUserData_" data-uid="GmodNET.API.ILua.PushUserData*"></a>
+  <h4 id="GmodNET_API_ILua_PushUserData_System_IntPtr_" data-uid="GmodNET.API.ILua.PushUserData(System.IntPtr)">PushUserData(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Pushes a given pointer as light-userdata onto the stack.
+OBSOLETE! This method is deprecated.
+Use <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_PushUserType_System_IntPtr_System_Int32_">PushUserType(IntPtr, Int32)</a> instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This method is deprecated. Use ILua.PushUserType instead&quot;)]
+void PushUserData(IntPtr data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>A pointer to push.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_PushUserData_System_IntPtr__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_PushUserType_System_IntPtr_System_Int32_">PushUserType(IntPtr, Int32)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_PushUserType_System_IntPtr_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.PushUserType(System.IntPtr%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L636">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_PushUserType_" data-uid="GmodNET.API.ILua.PushUserType*"></a>
+  <h4 id="GmodNET_API_ILua_PushUserType_System_IntPtr_System_Int32_" data-uid="GmodNET.API.ILua.PushUserType(System.IntPtr,System.Int32)">PushUserType(IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Pushes a userdata onto the stack and assigns a given type to it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PushUserType(IntPtr data_pointer, int iType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">data_pointer</span></td>
+        <td><p>A userdata pointer to push.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iType</span></td>
+        <td><p>An id of the type which must be assigned to pushed userdata.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_PushUserType_System_IntPtr_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See “Userdata” for more information on userdata: <a href="https://www.lua.org/pil/28.1.html">https://www.lua.org/pil/28.1.html</a></p>
+<p>See section &quot;Metatables&quot; in the Lua manual for more information about types and metatables: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_PushVector_System_Numerics_Vector3_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.PushVector(System.Numerics.Vector3)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L581">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_PushVector_" data-uid="GmodNET.API.ILua.PushVector*"></a>
+  <h4 id="GmodNET_API_ILua_PushVector_System_Numerics_Vector3_" data-uid="GmodNET.API.ILua.PushVector(System.Numerics.Vector3)">PushVector(Vector3)</h4>
+  <div class="markdown level1 summary"><p>Pushes a given <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a> as Garry’s Mod vector onto the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PushVector(Vector3 vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.numerics.vector3">Vector3</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>A vector to push.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_RawEqual_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.RawEqual(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L230">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_RawEqual_" data-uid="GmodNET.API.ILua.RawEqual*"></a>
+  <h4 id="GmodNET_API_ILua_RawEqual_System_Int32_System_Int32_" data-uid="GmodNET.API.ILua.RawEqual(System.Int32,System.Int32)">RawEqual(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Checks if two objects on the stack are equal. Does not invoke metamethods.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool RawEqual(int iA, int iB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iA</span></td>
+        <td><p>Stack index of the first object to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iB</span></td>
+        <td><p>Stack index of the second object to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>True</code> if objects being compared are equal, <code>False</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_RawEqual_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Unlike <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_Equal_System_Int32_System_Int32_">Equal(Int32, Int32)</a>, performs a “raw” comparison of two objects and does not relies on objects’ metamethods.
+In particular, the method will return <code>True</code> for two tables if and only if they contain same key-value pairs,
+any custom <code>__eq</code> metamethod will be ignored.</p>
+<p>See <code>lua_rawequal</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <h5 id="GmodNET_API_ILua_RawEqual_System_Int32_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_Equal_System_Int32_System_Int32_">Equal(Int32, Int32)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_RawGet_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.RawGet(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L747">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_RawGet_" data-uid="GmodNET.API.ILua.RawGet*"></a>
+  <h4 id="GmodNET_API_ILua_RawGet_System_Int32_" data-uid="GmodNET.API.ILua.RawGet(System.Int32)">RawGet(Int32)</h4>
+  <div class="markdown level1 summary"><p>Pushes the value <code>t[k]</code> onto of the stack,
+where <code>t</code> is a table at <code data-dev-comment-type="paramref" class="paramref">iStackPos</code>,
+and <code>k</code> is an object on top of the stack.
+Ignores redefined metamethods.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RawGet(int iStackPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iStackPos</span></td>
+        <td><p>A stack position of the table to get value from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_RawGet_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Works as <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_GetTable_System_Int32_">GetTable(Int32)</a>, but if the table has a custom redefined metamethod <code>__index</code>,
+it will be ignored.</p>
+<p>Pops a key object from the stack.</p>
+<p>See <code>lua_rawget</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+<p>See section &quot;Metatables&quot; in the Lua manual for more information about types and metatables: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <h5 id="GmodNET_API_ILua_RawGet_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_GetTable_System_Int32_">GetTable(Int32)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_RawSet_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.RawSet(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L767">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_RawSet_" data-uid="GmodNET.API.ILua.RawSet*"></a>
+  <h4 id="GmodNET_API_ILua_RawSet_System_Int32_" data-uid="GmodNET.API.ILua.RawSet(System.Int32)">RawSet(Int32)</h4>
+  <div class="markdown level1 summary"><p>Does a table value assignment equivalent to <code>t[k]=v</code>,
+where <code>t</code> is a table at <code data-dev-comment-type="paramref" class="paramref">iStackPos</code>,
+<code>v</code> is a value on top of the stack,
+and <code>k</code> is a key at stack index <code>-2</code>.
+Ignores redefined metamethods.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RawSet(int iStackPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iStackPos</span></td>
+        <td><p>A stack position of the table to add a key-value pair to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_RawSet_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Works as <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_SetTable_System_Int32_">SetTable(Int32)</a>, but if the table has a custom redefined metamethod <code> __newindex</code>,
+it will be ignored.</p>
+<p>Pops both the key and the value from the stack.</p>
+<p>See <code>lua_rawset</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+<p>See section &quot;Metatables&quot; in the Lua manual for more information about types and metatables: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_ReferenceCreate.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.ReferenceCreate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L454">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_ReferenceCreate_" data-uid="GmodNET.API.ILua.ReferenceCreate*"></a>
+  <h4 id="GmodNET_API_ILua_ReferenceCreate" data-uid="GmodNET.API.ILua.ReferenceCreate">ReferenceCreate()</h4>
+  <div class="markdown level1 summary"><p>Creates a unique integer identifier (reference) for the object on top of the stack and saves it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ReferenceCreate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>A unique integer identifier for saved Lua object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_ReferenceCreate_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Pops object from the stack.</p>
+<p>Returned reference can be used to push saved object onto any Lua execution stack with <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_ReferencePush_System_Int32_">ReferencePush(Int32)</a>.
+If the saved object is no longer needed, the reference must be freed with <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_ReferenceFree_System_Int32_">ReferenceFree(Int32)</a> to prevent memory leaks.</p>
+<p>See <code>luaL_ref</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <h5 id="GmodNET_API_ILua_ReferenceCreate_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_ReferencePush_System_Int32_">ReferencePush(Int32)</a></div>
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_ReferenceFree_System_Int32_">ReferenceFree(Int32)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_ReferenceFree_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.ReferenceFree(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L465">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_ReferenceFree_" data-uid="GmodNET.API.ILua.ReferenceFree*"></a>
+  <h4 id="GmodNET_API_ILua_ReferenceFree_System_Int32_" data-uid="GmodNET.API.ILua.ReferenceFree(System.Int32)">ReferenceFree(Int32)</h4>
+  <div class="markdown level1 summary"><p>Frees a Lua reference, previously created by <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_ReferenceCreate">ReferenceCreate()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ReferenceFree(int reference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">reference</span></td>
+        <td><p>A reference to free.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_ReferenceFree_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <code>luaL_ref</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <h5 id="GmodNET_API_ILua_ReferenceFree_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_ReferenceCreate">ReferenceCreate()</a></div>
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_ReferencePush_System_Int32_">ReferencePush(Int32)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_ReferencePush_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.ReferencePush(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L476">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_ReferencePush_" data-uid="GmodNET.API.ILua.ReferencePush*"></a>
+  <h4 id="GmodNET_API_ILua_ReferencePush_System_Int32_" data-uid="GmodNET.API.ILua.ReferencePush(System.Int32)">ReferencePush(Int32)</h4>
+  <div class="markdown level1 summary"><p>Pushes a previously saved (with <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_ReferenceCreate">ReferenceCreate()</a>) object by its reference onto the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ReferencePush(int reference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">reference</span></td>
+        <td><p>A reference to object to push onto the stack.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_ReferencePush_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <code>luaL_ref</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <h5 id="GmodNET_API_ILua_ReferencePush_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_ReferenceCreate">ReferenceCreate()</a></div>
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_ReferenceFree_System_Int32_">ReferenceFree(Int32)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_Remove_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.Remove(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L254">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_Remove_" data-uid="GmodNET.API.ILua.Remove*"></a>
+  <h4 id="GmodNET_API_ILua_Remove_System_Int32_" data-uid="GmodNET.API.ILua.Remove(System.Int32)">Remove(Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes an object at <code data-dev-comment-type="paramref" class="paramref">iStackPos</code> index from the stack.
+Any elements above (with greater positive index) <code data-dev-comment-type="paramref" class="paramref">iStackPos</code> are shifted downwards.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Remove(int iStackPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iStackPos</span></td>
+        <td><p>Stack position of the object to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_Remove_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Cannot be called with a pseudo-index, because a pseudo-index is not an actual stack position.</p>
+<p>See <code>lua_remove</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_SetField_System_Int32_System_String__.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.SetField(System.Int32%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L106">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_SetField_" data-uid="GmodNET.API.ILua.SetField*"></a>
+  <h4 id="GmodNET_API_ILua_SetField_System_Int32_System_String__" data-uid="GmodNET.API.ILua.SetField(System.Int32,System.String@)">SetField(Int32, in String)</h4>
+  <div class="markdown level1 summary"><p>Does a table key-value assignment <code>t[k] = v</code>,
+where <code>t</code> is the table at <code data-dev-comment-type="paramref" class="paramref">iStackPos</code>,
+<code>k</code> is a string <code data-dev-comment-type="paramref" class="paramref">key</code>,
+and <code>v</code> is a value on top of the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetField(int iStackPos, in string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iStackPos</span></td>
+        <td><p>Position of the table on the stack.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key in the table to set value for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_SetField_System_Int32_System_String___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Pops the value from the top of the stack.
+This method can be used to fill Lua tables with values or update them.
+In the example below we will add a Lua funtion <code>SayHello</code> to the Lua global table <a class="xref" href="GmodNET.API.SPECIAL_TABLES.html#GmodNET_API_SPECIAL_TABLES_SPECIAL_GLOB">SPECIAL_GLOB</a>.
+This function then can be called from any Lua script as <code>SayHello()</code>.</p>
+<p>See <code>lua_setfield</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <h5 id="GmodNET_API_ILua_SetField_System_Int32_System_String___examples">Examples</h5>
+  <pre><code>public int LuaFunc(ILua lua)
+{
+    lua.PushSpecial(SPECIAL_TABLES.SPECIAL_GLOB);
+    lua.PushManagedFunction(lua =>
+    {
+        lua.PushSpecial(SPECIAL_TABLES.SPECIAL_GLOB);
+        lua.GetField(-1, &quot;print&quot;);
+        lua.PushString(&quot;Hello!&quot;);
+        lua.MCall(1, 0);
+        lua.Pop(1);
+
+        return 0;
+    });
+    lua.SetField(-2, &quot;SayHello&quot;);
+    lua.Pop(1); // As you can see we pop only one value from the stack (remaining global table) since the function itself was poped by SetField already
+
+    return 0;
+}</code></pre>
+
+  <h5 id="GmodNET_API_ILua_SetField_System_Int32_System_String___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_GetField_System_Int32_System_String__">GetField(Int32, in String)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_SetMetaTable_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.SetMetaTable(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L125">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_SetMetaTable_" data-uid="GmodNET.API.ILua.SetMetaTable*"></a>
+  <h4 id="GmodNET_API_ILua_SetMetaTable_System_Int32_" data-uid="GmodNET.API.ILua.SetMetaTable(System.Int32)">SetMetaTable(Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the metatable for the element at <code data-dev-comment-type="paramref" class="paramref">iStackPos</code> to the table on the top of the stack. Pops the table from the top of the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetMetaTable(int iStackPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iStackPos</span></td>
+        <td><p>Stack position of the element to set metatable for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_SetMetaTable_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <code>lua_setmetatable</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a>
+To learn more about Lua metatables see <a href="https://www.lua.org/pil/13.html">https://www.lua.org/pil/13.html</a></p>
+</div>
+  <h5 id="GmodNET_API_ILua_SetMetaTable_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_GetMetaTable_System_Int32_">GetMetaTable(Int32)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_SetState_System_IntPtr_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.SetState(System.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L590">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_SetState_" data-uid="GmodNET.API.ILua.SetState*"></a>
+  <h4 id="GmodNET_API_ILua_SetState_System_IntPtr_" data-uid="GmodNET.API.ILua.SetState(System.IntPtr)">SetState(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets a new internal pointer to Garry’s Mod native <code>lua_state</code> structure of the <a class="xref" href="GmodNET.API.ILua.html">ILua</a> implementation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetState(IntPtr lua_state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">lua_state</span></td>
+        <td><p>A pointer to <code>lua_state</code> structure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_SetState_System_IntPtr__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>For advanced use cases only.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_SetTable_System_Int32_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.SetTable(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L727">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_SetTable_" data-uid="GmodNET.API.ILua.SetTable*"></a>
+  <h4 id="GmodNET_API_ILua_SetTable_System_Int32_" data-uid="GmodNET.API.ILua.SetTable(System.Int32)">SetTable(Int32)</h4>
+  <div class="markdown level1 summary"><p>Does a table value assignment equivalent to <code>t[k]=v</code>,
+where <code>t</code> is a table-like object at <code data-dev-comment-type="paramref" class="paramref">iStackPos</code>,
+<code>v</code> is a value on top of the stack,
+and <code>k</code> is a key at stack index <code>-2</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetTable(int iStackPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iStackPos</span></td>
+        <td><p>A stack position of the table to add a key-value pair to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_SetTable_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Unlike <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_SetField_System_Int32_System_String__">SetField(Int32, in String)</a>, allows to add a key-value pair to a table with the key not being a string.</p>
+<p>Pops both the key and the value from the stack.</p>
+<p>See <code>lua_settable</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+  <h5 id="GmodNET_API_ILua_SetTable_System_Int32__examples">Examples</h5>
+  <p>The following example shows how <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_SetTable_System_Int32_">SetTable(Int32)</a> can be used instead of <a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_SetField_System_Int32_System_String__">SetField(Int32, in String)</a>.</p>
+<pre><code>public static int SetTableExample(ILua lua)
+{
+    lua.PushSpecial(SPECIAL_TABLES.SPECIAL_GLOB);
+    lua.PushString(&quot;SetTableWorks&quot;);
+    lua.PushString(&quot;Yes, SetTable works!&quot;);
+    lua.SetTable(-3); // Adds a key-value pair &quot;SetTableWorks&quot;:&quot;Yes, SetTable works!&quot; to the Global table
+    lua.Pop(1);
+
+    return 0;
+}</code></pre>
+
+  <h5 id="GmodNET_API_ILua_SetTable_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="GmodNET.API.ILua.html#GmodNET_API_ILua_SetField_System_Int32_System_String__">SetField(Int32, in String)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_SetUserType_System_Int32_System_IntPtr_.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.SetUserType(System.Int32%2CSystem.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L648">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_SetUserType_" data-uid="GmodNET.API.ILua.SetUserType*"></a>
+  <h4 id="GmodNET_API_ILua_SetUserType_System_Int32_System_IntPtr_" data-uid="GmodNET.API.ILua.SetUserType(System.Int32,System.IntPtr)">SetUserType(Int32, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Sets a new pointer for userdata at iStackPos without changing its type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetUserType(int iStackPos, IntPtr data_pointer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">iStackPos</span></td>
+        <td><p>A stack position of userdata.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">data_pointer</span></td>
+        <td><p>New userdata pointer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_SetUserType_System_Int32_System_IntPtr__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Can be used for invalidation of userdata by passing <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.intptr.zero">Zero</a>.</p>
+<p>See “Userdata” for more information on userdata: <a href="https://www.lua.org/pil/28.1.html">https://www.lua.org/pil/28.1.html</a></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua_Top.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua.Top%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L21">View Source</a>
+  </span>
+  <a id="GmodNET_API_ILua_Top_" data-uid="GmodNET.API.ILua.Top*"></a>
+  <h4 id="GmodNET_API_ILua_Top" data-uid="GmodNET.API.ILua.Top">Top()</h4>
+  <div class="markdown level1 summary"><p>Returns the number of elements on the current lua stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int Top()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>The number of elements in the current lua stack.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GmodNET_API_ILua_Top_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <code>lua_gettop</code> function in the Lua manual: <a href="https://www.lua.org/manual/5.1/manual.html">https://www.lua.org/manual/5.1/manual.html</a></p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/GmodNET/GmodDotNet/new/main/apiSpec/new?filename=GmodNET_API_ILua.md&amp;value=---%0Auid%3A%20GmodNET.API.ILua%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/GmodNET/GmodDotNet/blob/main/gm_dotnet_managed/GmodNET.API/ILua.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

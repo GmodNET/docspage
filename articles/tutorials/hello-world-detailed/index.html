@@ -1,0 +1,557 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>A comprehensive introduction to Visual Studio, C# and the 'Hello World' code | Gmod.NET Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="A comprehensive introduction to Visual Studio, C# and the 'Hello World' code | Gmod.NET Docs ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../images/favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../images/gmodnetlogo-50px.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="tutorial_hello_world_detailed">
+<h1 id="a-comprehensive-introduction-to-visual-studio-c-and-the-hello-world-code">A comprehensive introduction to Visual Studio, C# and the Hello World code</h1>
+
+<p>At the end of this tutorial you will have created and installed your own module that simply states: 'Hello World!' in the console. We will write a bit of C# (pronounce C-Sharp) code and learn about the basics of C# with regards to Gmod.NET module making.</p>
+<p><strong>This tutorial is written for users who may not yet be familiar with coding outside of Garry's Mod Lua</strong>. You could skip sections of the tutorial at your own discretion or check out the shorter tutorial: <a class="xref" href="../hello-world/index.html">A quick start with &#39;Hello World&#39;</a></p>
+<h2 id="why">Why?</h2>
+<p><strong>Because we can make Garry's Mod do more things.</strong></p>
+<p>You can use Lua to automate a lot of cool stuff in Garry's Mod. Still there are restrictions to what we can do. For example we can't just connect to a MySQL database from Lua. To be able to do that we need to install a module.</p>
+<p>Typically programmers can write modules with C++. Learning C++ and handling it the right way can be a challenge. C# is often described as being more accessible and the .NET Core Framework already comes with a lot of features.</p>
+<p>Furthermore there is tons of code already written for the .NET Core Framework. This means we can utilize that in our module to extend what Garry's Mod Lua can do.</p>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Windows 10 (8.1 and 7 SP1 may also work, see <a href="https://docs.microsoft.com/en-us/visualstudio/releases/2019/system-requirements#visual-studio-2019-system-requirements">Visual Studio requirements</a>)</li>
+<li>An internet connection</li>
+<li>A copy of <a href="https://store.steampowered.com/app/4000/garrys_mod">Garry's Mod installed through Steam</a></li>
+<li>Approximately 1 hour of your time and patience <em>(including downloading and installing Visual Studio)</em></li>
+</ul>
+<h2 id="preparations">Preparations</h2>
+<h3 id="make-sure-you-are-on-the-garrys-mod-x86-64-beta-branch">Make sure you are on the Garry's Mod <code>x86-64</code> Beta branch</h3>
+<ol>
+<li><p>In your Steam Library find Garry's Mod</p>
+</li>
+<li><p>Right click Garry's Mod and go to <strong>Properties...</strong></p>
+<p><img src="../hello-world/images/gmod-properties.png" alt="gmod-properties"></p>
+</li>
+<li><p>Click the <strong>Beta</strong> menu</p>
+</li>
+<li><p>From the dropdown select <strong>x86-64</strong></p>
+<p><img src="../hello-world/images/gmod-beta-property.png" alt="gmod beta branch"></p>
+</li>
+</ol>
+<h3 id="install-gmodnet-in-garrys-mod">Install Gmod.NET in Garry's Mod</h3>
+<p>Follow <a href="https://github.com/GmodNET/GmodDotNet#installation-and-usage">the instructions in the README</a> and <strong>double check the following is true:</strong></p>
+<ol>
+<li>You have unpacked your <a href="https://github.com/GmodNET/GmodDotNet/releases">release of Gmod.NET</a> to <code>garrysmod/lua/bin/</code> (create the <code>bin</code> folder if it does not yet exist)</li>
+<li>You have created a Modules folder inside <code>garrysmod/lua/bin/</code></li>
+<li>Confirm your <code>garrysmod/lua/bin/</code> directory contains at least these files and folders:
+<img src="../hello-world/images/bin-folder-structure.png" alt="binary folder structure"></li>
+</ol>
+<h2 id="tutorial-overview">Tutorial Overview</h2>
+<p>In this tutorial we'll take you through the process of creating a simple 'Hello World!' module. It will simply print 'Hello World!' to the console. The great thing about that is that you will have learnt the basics of creating a Gmod.NET module. We'll use <strong>Visual Studio 2019</strong>, <strong>C#</strong> (pronounce: C-Sharp) and the <strong>.NET 5.0</strong> (pronounce: dot net 5) framework.</p>
+<p>These are the subjects we will be discussing:</p>
+<ol>
+<li>Configuring Visual Studio 2019 (aka &quot;VS2019&quot;)
+<ul>
+<li>Where to download it from and installing VS2019</li>
+<li>Ensuring the <em>.NET desktop development Workload</em> is installed</li>
+</ul>
+</li>
+<li>Creating a Gmod.NET module project
+<ul>
+<li>Choosing the project type <em>Class Library (.NET Core)</em></li>
+<li>Including the GmodNET.API <em>NuGet Package</em> into our project</li>
+</ul>
+</li>
+<li>Setting up the basic code structure
+<ul>
+<li>Implementing the GmodNET.API <em>IModule Interface</em></li>
+</ul>
+</li>
+<li>Writing module code
+<ul>
+<li>Printing 'Hello World' to the console</li>
+</ul>
+</li>
+<li>Building, installing and testing our module</li>
+<li>Recap and further reading
+<ul>
+<li>What is a <em>Visual Studio Solution</em> and how does it relate to a <em>Project</em>?</li>
+<li>Where can we learn more on writing C# code?</li>
+<li>What exactly is a <em>NuGet Package</em> and how can it help us?</li>
+<li>Other tutorials on Gmod.NET</li>
+</ul>
+</li>
+</ol>
+<p>Now that you know what we're going to do and how we're going to get there: Let's get started!</p>
+<h2 id="1-configuring-visual-studio-2019">1. Configuring Visual Studio 2019</h2>
+<p><em>In short:</em> Visual Studio 2019 (aka VS2019) is an Integrated Development Environment (IDE). You can use it to write instructions for the computer in the form of code. Furthermore it contains all the tools you may need to debug the code, build the code to machine language, collaborate and much much more.</p>
+<ol>
+<li>Get Visual Studio 2019 Community from the official website: <a href="https://visualstudio.microsoft.com/">https://visualstudio.microsoft.com/</a>. The community edition is free for individual developers, open-source and academic purposes.</li>
+</ol>
+<p>The installation should be self explanatory. Only make sure that you select the correct Workload: <em>.NET desktop development Workload</em>. We will need that to create a Garry's Mod .NET Module.</p>
+<ol start="2">
+<li>On the Workload selection screen in the installer choose at least the <strong>.NET desktop development</strong> Workload:</li>
+</ol>
+<p><img src="../hello-world/images/visual-studio-workload.png" alt="Visual Studio Installer .NET Workload"></p>
+<p>Let's make sure we really have ALL required components.</p>
+<ol start="3">
+<li><p>Go to <strong>Individual Components</strong> and ensure at least these components are checked:</p>
+<ul>
+<li><strong>.NET SDK</strong></li>
+<li><strong>NuGet Package manager</strong></li>
+<li><strong>C# and Visual Basic</strong></li>
+<li><strong>.NET 5.0 Runtime</strong></li>
+</ul>
+</li>
+<li><p>Now click <strong>Install</strong> at the bottom of the installer.</p>
+</li>
+</ol>
+<p>You can always install other workloads later, so don't bother with anything else for now. You can find the Visual Studio Installer after the installation in your <code>(Windows Start Menu) &gt; (All Programs) &gt; Visual Studio 2019 &gt; Visual Studio Installer</code>.</p>
+<p><strong>That's it for now! Let's go to the next step: Creating our Gmod.NET module project</strong></p>
+<p><em>Confused? Stuck? Need more help? <a href="https://www.youtube.com/watch?v=G1-Zfr9-3zs">This video contains a comprehensive guide in installing Visual Studio and starting it the first time</a>.</em></p>
+<h2 id="2creating-a-gmodnet-module-project">2.Creating a Gmod.NET module project</h2>
+<p>We've installed VS2019 and are ready to create our project.</p>
+<ol>
+<li>Start VS2019</li>
+<li><strong>(Only when starting VS for the first time)</strong> You may be asked for some configuration options. You can choose all default settings or take your time to setup your environment:
+<ul>
+<li><em>Do you want to sign in?</em> Not required, but recommended to synchronize settings across your devices.</li>
+<li><em>Which Development Settings?</em> 'Visual C#' will fit best for the purpose of this tutorial</li>
+<li><em>Which color theme?</em> Pick any you like</li>
+<li>After configuring our personal settings we should arrive at the start screen.</li>
+</ul>
+</li>
+</ol>
+<p>You should see the start screen. You can recognize it by the big heading 'Visual Studio 2019' at the top. To the right should be 'Get started' with several options underneath it.</p>
+<ol start="3">
+<li>Click the <strong>Create new project</strong> option</li>
+</ol>
+<p>We now get to choose which type of project we want to create</p>
+<ol start="4">
+<li>Click the project type <strong>Class Library (.NET Core)</strong> <em>(Use the search box to find it faster)</em></li>
+</ol>
+<ul>
+<li><strong>Note:</strong> Is this project type missing? Double-check that you installed the .NET desktop development workload and required components mentioned in the previous chapter.</li>
+<li><strong>Beware:</strong> There are similarly named project types that are incorrect! Do <strong>NOT</strong> choose Class Library (.NET Framework) or Class Library (.NET Standard). These are incompatible with Gmod.NET.</li>
+</ul>
+<p><img src="../hello-world/images/visual-studio-project-type.png" alt="visual-studio-project-type"></p>
+<ol start="5">
+<li>Click Next or double-click the project type</li>
+</ol>
+<p>We now get to choose a name for our project. <em>The rule we have for this is: no spaces, no special characters, EveryWordStartsWithACapitalLetter (known to programmers as PascalCase or UpperCamelCase)</em>.</p>
+<ol start="6">
+<li>Choose the project name <code>GmodHelloWorld</code></li>
+<li>Take note of the location where the project is created.</li>
+</ol>
+<p>The solution name is the same as the project name by default. This is fine. We'll learn about the difference between projects and solutions later.</p>
+<ol start="8">
+<li>Click Next</li>
+</ol>
+<p>Visual Studio now asks which framework you wish to target. Gmod.NET requires <strong>at least .NET 5.0</strong></p>
+<ol start="9">
+<li>As the Target Framework choose <strong>.NET 5.0</strong>
+<img src="../hello-world/images/project-net-5.png" alt=".NET 5.0 project"></li>
+</ol>
+<p>Visual Studio will generate a Class Library (.NET Core) project for us. When it's done you will see this screen:</p>
+<p><img src="../hello-world/images/new-project.png" alt="New Class Library project"></p>
+<p>Visual Studio helps us identify problems with our code. I have already enabled the Error List so I can see the errors and warnings Visual Studio gives. Errors always need to be fixed. Warnings can sometimes be ignored.</p>
+<ol start="10">
+<li>Go to View and click <strong>Error List</strong>. This will help us later. You only have to do this once.</li>
+</ol>
+<p>To keep the Error List in view you can click the little 'pin' icon in the top right.</p>
+<p>In order to write Garry's Mod .NET modules we need to include the Gmod.NET API <strong>NuGet package</strong>. This adds code to our project so we don't have to write literally all code ourselves.</p>
+<p><strong>Let's add the GmodNET.API NuGet package to our project.</strong></p>
+<p>In Visual Studio we call the top menu <em>(containing File, Edit, View, etc....)</em> <strong>the toolstrip</strong>.</p>
+<ol start="11">
+<li>In the toolstrip Go to <strong>Tools &gt; NuGet Package Manager &gt; Manage NuGet Packages for Solution...</strong></li>
+</ol>
+<p><img src="../hello-world/images/nuget-package-manager.png" alt="nuget-package-manager"></p>
+<p>Through the <strong>NuGet package manager</strong> we can download and install all kinds of useful additions. Other programmers have graciously shared their projects with us, saving us from having to write all our own code.</p>
+<ol start="12">
+<li>Go to the <strong>Browse</strong> tab</li>
+<li>In the search bar search for &quot;GmodNET.API&quot;</li>
+<li>Click <strong>GmodNET.API</strong></li>
+<li>On the right-hand side check the box in front of your project name (GmodHelloWorld)</li>
+<li>Click Install</li>
+</ol>
+<p>By default the NuGet Package Manager will install the latest version into our project. It may take a second to download and install. You can see if Visual Studio is downloading something by looking at the bottom left of the program. It will say &quot;Ready&quot; when it's done doing whatever it's doing.</p>
+<p><strong>We have now created an empty project with which we can start making Gmod.NET modules.</strong> You will repeat this chapter every time you wish to create a new Garry's Mod module.</p>
+<h2 id="3-setting-up-the-basic-code-structure">3. Setting up the basic code structure</h2>
+<p>Great! We've got the project setup. We want to get to writing some code. I'll have to bore you with some more <em>&quot;things you always have to do&quot;</em> though. Stick with me while we setup the code that will instruct Gmod.NET how to load our module.</p>
+<p>On the right hand side you see the <strong>Solution Explorer</strong>. This contains our Solution, Project(s) and code files. We can also see what it &quot;depends on&quot; in Dependencies (NuGet Packages for example).</p>
+<p><strong>Right now we have only a single code-file named Class1.cs (.cs stands for C-Sharp/C#). Let's clean up our code a bit and make it clear what it does.</strong></p>
+<ol>
+<li><p>Right click <strong>Class1.cs</strong> in the Solution Explorer</p>
+</li>
+<li><p>Click Rename and let's give this file a better name <em>(read on below the image)</em></p>
+<p><img src="../hello-world/images/solution-explorer-rename.png" alt="solution-explorer-rename"></p>
+</li>
+<li><p>We will name the file &quot;Setup.cs&quot; since it will explain to Gmod.NET how our module starts, stops and what it does. <em>I challenge you to think of a better name, though make sure that (like the project name) it is always UpperCamelCase with no spaces, nor any special characters. It always needs to end in <strong>.cs</strong> if you're writing C# code in it.</em></p>
+</li>
+<li><p><strong>Always click yes</strong> when you get the dialog asking your something like <em>&quot;Would you like to rename all references from Class1 to Setup?&quot;</em>.</p>
+</li>
+</ol>
+<p>You should see the code on the left hand side change. Amongst other code it will now say <code>public class Setup</code> instead of <code>public class Class1</code>. It is always a good idea that the filename is the same as the class name. What a &quot;class&quot; is and what &quot;public&quot; stands for is outside the scope of this tutorial. At the end of this tutorial we'll refer you to some more tutorials on the C# programming language.</p>
+<p>We've seen where we can navigate through our code in the Solution Explorer. We can see our code on the left-hand side. At the bottom of Visual Studio we even see a nice empty Error List (hopefully).</p>
+<p><strong>We will now write our first code, instructing Gmod.NET that this code file is a module.</strong></p>
+<p><strong>Note:</strong> Follow along carefully! Like in Garry's Mod Lua a single incorrect character can cause problems. Furthermore in C# you need to write code in exactly the right place. Everything in C# is inside a class and a class is usually inside a namespace. Always within the correct <strong>curly brackets</strong>: { and }.</p>
+<ol start="5">
+<li>Put your cursor behind <code>public class Setup</code> and type: <code> : IModule</code></li>
+</ol>
+<p>Check that you've written the code exactly (with a capital I and capital M) like in this screenshot:</p>
+<p><img src="../hello-world/images/first-error.png" alt="first-error"></p>
+<p>😱 Oh no! We've got an error! Well at least we know the Error List works. It tells us that IModule can't be found. We even get a red curly line under the text IModule and if we hover over it with our cursor we see the error again.</p>
+<p>Errors aren't something to be afraid of. In fact they will happen all the time while we're writing code. Usually they're very clear in what's wrong and give us information to work with. The only downside is: we don't know all the ins-and-outs of programming in C# yet. So every error looks like it's written in a foreign language we don't speak. Give yourself enough time to learn what the errors mean and how to correct them.</p>
+<p><strong>Incredibly Visual Studio thinks it can even help us with this error. It's saying 'Show potential fixes' and in this case one of the suggestions actually makes sense.</strong></p>
+<ol start="6">
+<li><p>Click <strong>Show potential fixes</strong></p>
+</li>
+<li><p>Now click the top option <strong>using GmodNET.API;</strong></p>
+<p><strong>Note:</strong> If this option is missing then you skipped installing the GmodNET.API NuGet package in the previous chapter, or it failed to install somehow.</p>
+</li>
+</ol>
+<p><img src="../hello-world/images/first-error-fixed.png" alt="first error fixed"></p>
+<p><strong>Note:</strong> You can't always just go and click an option that Visual Studio recommends. Sometimes it gives terrible suggestions and the bottom three suggestions (Generate interface [...], Generate new type, etc.) almost always appear.</p>
+<p>The suggestion to add <code>using GmodNET.API;</code> added that same line of code to the top of our file. The name IModule turned a different color as well. With that line of code we explained to Visual Studio that we understand that IModule is not part of default C#. We tell it to go look for additional code in the GmodNET.API &quot;namespace&quot;. There's code in GmodNET.API that explains what IModule is and how it works. Therefor the error we had disappears. C# now knows what to do with IModule.</p>
+<p><strong>Additionally we've now got 4 new errors. Yay! Information:</strong></p>
+<p><img src="../hello-world/images/interface-errors.png" alt="next errors"></p>
+<p><strong>IModule is an &quot;interface&quot;. An interface forces us to add certain functionalities to our class.</strong> IModule forces us to add functionalities explaining how the module must start and stop.</p>
+<p>Since we don't have those functionalities Visual Studio righteously complains by giving us errors. Let's add the missing functionalities.</p>
+<p>Let Visual Studio help us <em>implement the interface</em> <em>(= to add the functionalities that the interface wants us to add):</em></p>
+<ol start="8">
+<li>Hover your cursor over the error at IModule</li>
+<li>Select <strong>Show potential fixes</strong></li>
+<li>Choose the suggestion <strong>Implement interface</strong></li>
+</ol>
+<p><img src="../hello-world/images/implement-interface.png" alt="implement interface"></p>
+<p>With those few clicks VS has gone and generated a ton of code for us. I even had to resize the panels inside Visual Studio a bit and zoom out on the code so all of it fits in the next screenshot:</p>
+<p><img src="../hello-world/images/implemented-interface.png" alt="implemented interface"></p>
+<p><strong>All errors are gone now!</strong></p>
+<p>The generated code shows us how we can implement our interface. The clear names for these functionalities also show us what we need to do and how we need to fill it in.</p>
+<p><strong>Let's go over the generated code, step-by-step and fill in the &quot;empty spots&quot;.</strong></p>
+<ol start="11">
+<li><p>First we have the <em>Property</em> <code>ModuleName</code> which is of the type <em>string</em>. Adjust the code like so:</p>
+<p><img src="../hello-world/images/property-module-name.png" alt="property module name"></p>
+</li>
+</ol>
+<p><strong>A <em>Property</em> describes a class</strong> (plural. In this case the <code>ModuleName</code> describes what the name of our module will be. This property is of the type <em>string</em>. <strong>Properties with the type string can only contain text</strong>. We can write literal text by using &quot;double quotation marks&quot;.</p>
+<p><strong>You can compare Properties to variables in Lua.</strong> Only a property is a variable that is tied to the class it is in.</p>
+<p>In this case our property can be <em>accessed from the outside</em> by other classes and even other applications. This is because we made it <em>public</em>. We need these properties to be public because Gmod.NET can look at these values later when it loads our module.</p>
+<p>The next property is called <code>ModuleVersion</code> and is also of the type string. In the exact same way you wrote the code for ModuleName you should now write the code for the version of your module.</p>
+<ol start="12">
+<li>Set ModuleVersion to the version number: 0.1.0 (Make sure you use the symbols we just discussed to indicate it's a literal string)</li>
+</ol>
+<p>Those were the only properties. Next up we get the place where we will write code that instructs the computer (or Garry's Mod in this case) to do something.</p>
+<p>If we skim the rest of the code we see (amongst a lot of other code) the words Load and Unload. **Load and Unload are 'Methods'. **</p>
+<p><strong>Methods explain to the computer in what sequence actions need to be performed. You can somewhat compare Methods to Lua functions.</strong></p>
+<p>Methods sometimes get input and they sometimes return output. We can see that the Load and Unload methods don't return any output from the keyword <code>void</code> in front of the Method name.</p>
+<p>We can see from the <code>(ILua lua)</code> behind the Unload method that it only expects a single argument/input.</p>
+<p><strong>Load is called by Gmod.NET when our module is loaded.</strong> We will fill it with code in the next chapter.</p>
+<p><strong>Unload is called by Gmod.NET when our module needs to clean up after itself.</strong> Unload is irrelevant for our Hello World example.</p>
+<ol start="13">
+<li>Remove <code>throw new NotImplementedException();</code> from both the Load and Unload methods:</li>
+</ol>
+<p><img src="../hello-world/images/methods-empty.png" alt="empty methods"></p>
+<p><code>NotImplementedException</code> is a runtime error that helps us programmers remember to write some code. In C# we call runtime errors <code>Exceptions</code>. The <code>throw</code> keyword helps us raise such errors.</p>
+<p><strong>To summarize what we've learnt:</strong></p>
+<ul>
+<li>Errors help us identify problems</li>
+<li>By putting <code>: IModule</code> behind our class name we can make it a Gmod.NET module</li>
+<li>In order to use the IModule interface we have to add a line of code starting with &quot;using&quot; at the top of the file.</li>
+<li>Visual Studio can help us fix some errors, but not all.</li>
+<li>Visual Studio can help us generate the functionalities IModule requires: implementing the IModule interface</li>
+<li>Properties describe a class</li>
+<li>Methods explain in what sequence code needs to be executed</li>
+<li>Runtime errors in C# are called Exceptions</li>
+</ul>
+<p><strong>That's it! We've setup our code and are ready to get to the main subject of today: making our module print 'Hello World!'.</strong></p>
+<h2 id="4-writing-module-code">4. Writing module code</h2>
+<p>After all those instructions we finally get to the most important part of this module: actually printing 'Hello World!' to the Garry's Mod console. Hilariously this will be the shortest chapter of all.</p>
+<ol>
+<li><p>We'll explain a bit of the code below in a moment. First copy the following code inside the Load method <strong>between the curly brackets</strong>:</p>
+<pre><code class="lang-csharp">lua.PushSpecial(GmodNET.API.SPECIAL_TABLES.SPECIAL_GLOB);
+lua.GetField(-1, &quot;print&quot;);
+lua.PushString(&quot;Hello World!&quot;);
+lua.MCall(1, 0);
+lua.Pop(1);
+</code></pre>
+</li>
+</ol>
+<p>Confirm the entire code file <strong>Setup.cs</strong> looks like this:</p>
+<p><img src="../hello-world/images/final-code.png" alt="final code"></p>
+<p>The code we just added to the Load method will be executed when Gmod.NET loads our module. The code simply prints the string &quot;Hello World!&quot; to the Garry's Mod console. We use the Lua <code>print</code> function to achieve this.</p>
+<p><strong>You can take the code you just copied for granted and skip to the next chapter to build, install and test your module. Come back when you're ready to have the code explained to you.</strong></p>
+<h3 id="the-hello-world-code-explained">The Hello World code explained</h3>
+<p>The Hello World code we copied looks overly complex if we just want to print a string. Especially if you consider that in Lua it takes only: <code>print(&quot;Hello World!&quot;)</code> and you're done. The difference is Lua uses what is called a &quot;Stack&quot; to communicate values between Lua and the C-programming language (in our case C#). This may feel a bit weird at first, but you'll get used to it.</p>
+<p>You can imagine the Lua <em>Stack</em> exactly like what it implies. A stack of things: you can only put something on top and take something of the top. Don't try and pull something out halfway or from the bottom or everything falls over/breaks.</p>
+<h4 id="the-load-method-and-its-arguments">The Load method and its arguments</h4>
+<p>First we see by the <code>void</code> indicator in front of the Load method that it returns no value. Load gives no output.</p>
+<p>We can see that the Load method receives a few arguments of input:</p>
+<ul>
+<li>We have 4 arguments that Gmod.NET will fill for us. Each argument is basically a variable. Each variable has a type.</li>
+<li><code>ILua lua</code>:
+<ul>
+<li>The first argument is of type <code>ILua</code> and is named <code>lua</code></li>
+<li>We can use this argument inside the method by writing <code>lua.</code> and then something to do with it.</li>
+<li>This argument is filled with the Garry's Mod <em>Lua State</em>. It is what makes Lua work and we can use it to add variables to Lua, call Lua functions and more.</li>
+</ul>
+</li>
+<li><code>bool is_serverside</code>
+<ul>
+<li>The second argument is of type <code>bool</code> and is named <code>is_serverside</code></li>
+<li>A bool is short for boolean. It can contain only <code>true</code> or <code>false</code>.</li>
+<li>We often use booleans for yes/no or on/off questions.</li>
+<li>This argument is true if the module was loaded serverside.</li>
+</ul>
+</li>
+<li><code>ModuleAssemblyLoadContext assembly_context</code> - Irrelevant for beginners, ignore it for now.</li>
+</ul>
+<h4 id="the-load-methods-body">The Load method's body</h4>
+<p>We call the code inside a method it's body. The code we added will print &quot;Hello World!&quot;.</p>
+<p><strong>This is what each line of code does:</strong></p>
+<ul>
+<li><code>lua.PushSpecial(GmodNET.API.SPECIAL_TABLES.SPECIAL_GLOB);</code>
+<ul>
+<li>This is a method on the Lua State that puts something &quot;special&quot; on top of the Stack.</li>
+<li>We give it <code>GmodNET.API.SPECIAL_TABLES.SPECIAL_GLOB</code> to let the PushSpecial method know we want to put the &quot;Global Table&quot; on top of the stack.</li>
+<li>In Lua the Global Table lives in the <code>_G</code> variable (we'll use that name for the Global Table from hereon)</li>
+<li>It will become clear why we do this in a moment.</li>
+<li>Our stack (contains 1 thing) looks like this now:
+<ul>
+<li><code>_G</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>lua.GetField(-1, &quot;print&quot;);</code>
+<ul>
+<li>This is a method on the Lua State that gets the value of a field from a table. It then pushes that onto the stack</li>
+<li>We give it -1 to indicate to look down one spot on the stack for the table. -1 from the top of the stack is the Global Table (_G) that we just pushed onto the stack.</li>
+<li>In Lua the print function lives in the global table (that's why you can use it everywhere in your Lua code)</li>
+<li>Our stack (contains 2 things) now looks like this:
+<ul>
+<li><code>print</code></li>
+<li><code>_G</code> <em>(notice how the stack builds from the bottom to the top)</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>lua.PushString(&quot;Hello World!&quot;);</code>
+<ul>
+<li>Now we tell Lua to push the string &quot;Hello World!&quot; onto the stack.</li>
+<li>Our stack (contains 3 things) now looks like this:
+<ul>
+<li><code>&quot;Hello World!&quot;</code></li>
+<li><code>print</code></li>
+<li><code>_G</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>lua.MCall(1, 0);</code>
+<ul>
+<li>With the <code>MCall</code> method we tell Lua to call the stack as if it's a function.</li>
+<li>We give it 1 as the first argument to indicate that only the last thing thing on the stack (&quot;Hello World!&quot;) is the argument.</li>
+<li>We give it 0 as the second argument to let Lua know that we don't care about the output of the function (the print function doesn't return anything anyway)</li>
+<li>At this point the computer basically knows: <em>from the global table get the field print and call it with the string &quot;Hello World!&quot;</em>.</li>
+<li>In Lua this would be: <code>_G.print(&quot;Hello World!&quot;)</code></li>
+<li>When you call a function using <code>lua.MCall</code> it will remove the arguments and function from the stack for you.</li>
+<li>Our stack (contains 1 thing) looks like this now:
+<ul>
+<li><code>_G</code> <em>(Take note that in this case MCall will not remove the global table)</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>lua.Pop(1);</code>
+<ul>
+<li>Removes thing(s) from the top of the stack.</li>
+<li>We give it 1 to indicate we want to remove 1 thing from the top. In this case it removes the global table _G.</li>
+<li>Our stack now contains nothing.</li>
+<li>You should strive to always know what is on the stack. Don't just leave stuff in it, but pop it when you're done with it.</li>
+</ul>
+</li>
+</ul>
+<h2 id="5-building-installing-and-testing-our-module">5. Building, installing and testing our module</h2>
+<p>We've written the code to explain what our module wants to happen: <em>when loading our module print &quot;Hello World!&quot;</em>. To let Garry's Mod know we want this to happen, we'll have to install our module to it. Before we can install it, we'll have to build it.</p>
+<h3 id="building">Building</h3>
+<ol>
+<li>In the toolstrip go to <strong>Build</strong> and click <strong>Rebuild Solution</strong>. This will package our module ready for redistribution.</li>
+</ol>
+<p><img src="../hello-world/images/build-solution.png" alt="build-solution"></p>
+<ol start="2">
+<li><p>Go to your solution location in Windows File Explorer. This is the location you saw when you first created the project.</p>
+<p><strong>If you forgot where the project is located:</strong> you can find it by right-clicking the solution (at the top of the Solution Explorer) &gt; 'Open Folder in File Explorer'.</p>
+</li>
+</ol>
+<p><img src="../hello-world/images/find-solution-path.png" alt="find-solution-path"></p>
+<ol start="3">
+<li>Verify your solution looks like in in the screenshot below. If you want to share your code with others you should always share this entire folder  (including the <code>.sln</code>) file.</li>
+</ol>
+<p><img src="../hello-world/images/entire-solution.png" alt="entire-solution"></p>
+<ol start="4">
+<li><p>Inside your solution navigate to where the module was built: <code>&lt;your solution location&gt;\GmodHelloWorld\bin\Debug\net5.0\</code></p>
+</li>
+<li><p>If your module built successfully you'll have the following files. We'll call these &quot;<em>the built module files</em>&quot;.</p>
+</li>
+</ol>
+<p><img src="../hello-world/images/final-module-files.png" alt="final-module-files"></p>
+<h3 id="installing">Installing</h3>
+<ol>
+<li><p>Open another File Explorer window and go to your Garry's Mod folder and then <code>garrysmod\lua\bin\Modules</code>.</p>
+<ul>
+<li><strong>Note:</strong> If you don't see a <em>bin</em> folder in the lua folder, create it. If you don't see a <em>Modules</em> folder inside the bin folder, create it.</li>
+</ul>
+</li>
+<li><p>Create a folder inside <code>garrysmod\lua\bin\Modules</code> with the exact name of your module. In our case we name the folder GmodHelloWorld.</p>
+<ul>
+<li><strong>Note:</strong> The folder name needs to be exactly the same as the .dll name, but without the .dll suffix.</li>
+</ul>
+</li>
+<li><p>Copy all <em>the built module files</em> to the folder we just created at <code>garrysmod\lua\bin\Modules\GmodHelloWorld\</code>:</p>
+</li>
+</ol>
+<p><img src="../hello-world/images/final-module-files-at-location.png" alt="final-module-files-at-location"></p>
+<p><strong>The module is now installed and Gmod.NET should be able to find it.</strong></p>
+<h3 id="running--testing">Running &amp; Testing</h3>
+<ol>
+<li><p>Start Garry's Mod</p>
+</li>
+<li><p>Start a singleplayer game</p>
+</li>
+<li><p>Open the Developer Console</p>
+</li>
+<li><p>In order to load our module execute this Lua function: <code>dotnet.load</code> for example: <code>lua_run dotnet.load(&quot;GmodHelloWorld&quot;)</code></p>
+</li>
+<li><p>Check the console. Because we're loading the module on the server (using <code>lua_run</code>), our &quot;Hello World!&quot; message will appear in a blue color:</p>
+</li>
+</ol>
+<p><img src="../hello-world/images/console-output.png" alt="console-output"></p>
+<p><strong>🎉 Yay! Success!</strong> We've created a .NET module for Garry's Mod.</p>
+<h3 id="making-changes">Making changes</h3>
+<p>You'll have to rebuild and reinstall the module when you make changes in C#.</p>
+<ol>
+<li>When you reinstall the module (by copying it to: <code>lua/bin/Modules/GmodHelloWorld/</code>) you may get this error. That's because the module is in use while playing:</li>
+</ol>
+<p><img src="../hello-world/images/file-in-use.png" alt="file-in-use"></p>
+<ol start="2">
+<li><p>Unload the module:</p>
+<ul>
+<li>To unload the module execute this lua function: <code>dotnet.unload(&quot;GmodHelloWorld&quot;)</code></li>
+<li>In our case we use <code>lua_run dotnet.unload(&quot;GmodHelloWorld&quot;)</code> to unload the module serverside (because we loaded it with <code>lua_run</code> on the server before)</li>
+</ul>
+</li>
+<li><p>Now that the module is unloaded you can overwrite it with the new files.</p>
+</li>
+<li><p>Reload the module the same way we loaded it before (with <code>dotnet.load(&quot;GmodHelloWorld&quot;)</code>)</p>
+</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/GmodNET/GmodDotNet/blob/doc-tutorials/docfx_project/articles/tutorials/hello-world-detailed/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

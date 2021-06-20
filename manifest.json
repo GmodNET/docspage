@@ -1,0 +1,686 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/glebc/source/repos/GmodDotNet/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "xnRqPk13RduX0S08kiXTJEMSibWEFC3RfdbuRTykeko="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api-fusion/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api-fusion/index.html",
+          "hash": "DadMEp9YM/XiBlv6nEZ+Yzz7pyH+uXe1RVJ0nQk7dqM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api-fusion/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-fusion/toc.html",
+          "hash": "bQ4WTtbaqPeKHtYiYxhLL8+PY9fP9DMXAEJzt3jJzSU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GmodNET.API.GmodInterop.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GmodNET.API.GmodInterop.html",
+          "hash": "auK+TyTetXiYUElO1XReFgCGI/SPN4ftxx1AWFfdZXI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GmodNET.API.GmodLuaException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GmodNET.API.GmodLuaException.html",
+          "hash": "rWUBEST1ifbI/EW3S2gYG46/+ZA+ZuotPROzFgXa9OY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GmodNET.API.ILua.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GmodNET.API.ILua.html",
+          "hash": "jUcVLWzlL/2vyNn6Xi5KT2SG56Bn3OzV39eryaCXRbw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GmodNET.API.IModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GmodNET.API.IModule.html",
+          "hash": "uj6J85yegTYgprBByzR9PD6UeMzk79gwPlu7M1QAHlc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GmodNET.API.ModuleAssemblyLoadContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GmodNET.API.ModuleAssemblyLoadContext.html",
+          "hash": "+nApd4Qso4aXjWxbqzEeKLo0+Yqbdv0VLeIfTz369ho="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GmodNET.API.SPECIAL_TABLES.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GmodNET.API.SPECIAL_TABLES.html",
+          "hash": "+xRUDEBGVZBAcQLfv4IgmVhTZJB7pd55C63ptzK82ps="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GmodNET.API.TYPES.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GmodNET.API.TYPES.html",
+          "hash": "U2RhUtJh15xOpD5GH2Z+hKsea2R5RJvvEDAwxEv7GmY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GmodNET.API.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GmodNET.API.html",
+          "hash": "qix9OAnh9wIhU348tf6mJRlD8bhSxjsXi4EfopfBRVI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "0nPeh4g8BsHTjLAWTZwmWNpJ9pXNLZM/uSRatquZXyw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "fmMIhwKtwi0qXoGL7TxFzZ7vEGMtSYL0cK9NH5PV7CA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/connect-nightly/images/nightly-feed-api.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/connect-nightly/images/nightly-feed-api.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/connect-nightly/images/nightly-feed-connect.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/connect-nightly/images/nightly-feed-connect.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/connect-nightly/images/nightly-feed-instructions.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/connect-nightly/images/nightly-feed-instructions.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/connect-nightly/images/nuget-add-source.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/connect-nightly/images/nuget-add-source.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/connect-nightly/images/nuget-package-source.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/connect-nightly/images/nuget-package-source.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/connect-nightly/images/test-nightly-imodule.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/connect-nightly/images/test-nightly-imodule.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/connect-nightly/images/vs-installer-modify.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/connect-nightly/images/vs-installer-modify.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/connect-nightly/images/vs-installer-net-5.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/connect-nightly/images/vs-installer-net-5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/tutorials/connect-nightly/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/tutorials/connect-nightly/index.html",
+          "hash": "Xa8bKVUwvTTSBUgsZf1ubqJ6iNJ09NZx2mPDiEaIChc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/tutorials/hello-world-detailed/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/tutorials/hello-world-detailed/index.html",
+          "hash": "pwRIDcq0vD5Aft/BMZvWyjjfXn1R1d6wldk+q+Opdos="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/bin-folder-structure.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/bin-folder-structure.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/build-solution.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/build-solution.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/console-output.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/console-output.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/entire-solution.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/entire-solution.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/file-in-use.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/file-in-use.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/final-code.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/final-code.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/final-module-files-at-location.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/final-module-files-at-location.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/final-module-files.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/final-module-files.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/find-solution-path.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/find-solution-path.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/first-error-fixed.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/first-error-fixed.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/first-error.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/first-error.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/gmod-beta-property.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/gmod-beta-property.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/gmod-properties.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/gmod-properties.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/implement-interface.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/implement-interface.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/implemented-interface.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/implemented-interface.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/interface-errors.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/interface-errors.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/methods-empty.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/methods-empty.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/new-project.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/new-project.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/nuget-package-manager.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/nuget-package-manager.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/project-net-5.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/project-net-5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/property-module-name.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/property-module-name.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/release-target.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/release-target.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/solution-explorer-rename.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/solution-explorer-rename.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/visual-studio-project-type.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/visual-studio-project-type.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "articles/tutorials/hello-world/images/visual-studio-workload.png",
+      "output": {
+        "resource": {
+          "relative_path": "articles/tutorials/hello-world/images/visual-studio-workload.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/tutorials/hello-world/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/tutorials/hello-world/index.html",
+          "hash": "x24HgmyQn8BOsqVjP1Qc4mcFHVzzZ9Gg+70vdwCktsU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/tutorials/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/tutorials/overview.html",
+          "hash": "K/Bp9I+3P2aNi3L19nvj9v1Cy6pQIB8sfLYGJ9Oppww="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/favicon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/gmodnetlogo-50px.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/gmodnetlogo-50px.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "VR6DeGJsGH5X++9b+fJEmMBZKxRzutu3A4ArCtwhUiY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "lua-api/dotnet.md",
+      "output": {
+        ".html": {
+          "relative_path": "lua-api/dotnet.html",
+          "hash": "nlB947/pnsJ8RW/oBvp+OuxoM/vKCQgoB2tZIX3dBAM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "enXY76hGL2Dlh4RvKwk+68Uq5JLn0VdQo84eH+/qcC8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 9,
+          "skipped_file_count": 9
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 8,
+          "skipped_file_count": 1
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
